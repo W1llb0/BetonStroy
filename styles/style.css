@@ -1,0 +1,291 @@
+/* xs: 0,
+sm: 576px,
+md: 768px,
+lg: 992px, desktop
+xl: 1200px,
+wxp: 1440px,
+wxpp: 1600px,
+fhd: 1920px,
+qhd: 2560px, */
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.body-content {
+    width: 320px;
+}
+
+.header {
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 1240px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo a {
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.logo-blue {
+    text-transform: uppercase;
+    color: #376AC5;
+}
+
+.logo-yellow {
+    text-transform: uppercase;
+    color: #F1A228;
+}
+
+.sections-container{
+    display: none;
+}
+
+.header__sections {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__sections a {
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    color: #929292;
+}
+
+.header__sections a:not(:first-child){
+    padding-left: 70px;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.contacts__phone {
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 14px;
+    color: #3C3A3B;
+}
+
+.contacts__mail {
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 14px;
+    text-align: right;
+    color: #929292;
+}
+
+.button {
+    width: 95px;
+    height: 22px;
+    background: linear-gradient(265.28deg, #FE9C2A 3.85%, #EB5500 93.14%);
+    box-shadow: 0px 1px 10px #FFDAAF, inset 0px 0px 4px #FFCE94;
+    border: none;
+    border-radius: 6px;
+    position: relative;
+    cursor: pointer;
+}
+
+.button__content {
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 12px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #FFEED4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button__arrow-img {
+    position: absolute;
+    right: 0;
+    top: 1px;
+    width: 10px;
+}
+
+.burger {
+    border: 1px solid gray;
+    padding: 5px 8px 5px 8px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: rgb(233, 232, 232);
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+    margin-left: 10px;
+}
+
+.burger.active {
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.burger.active div:first-child {
+    visibility: hidden;
+}
+
+.burger.active div {
+    position: absolute;
+    transform: rotate(-50deg);
+    margin: 0;
+    padding: 0;
+    top: 10px;
+    transition: transform 0.3s ease;
+}
+
+.burger.active div:last-child {
+    transform: rotate(50deg);
+}
+
+.burger div {
+    width: 12px;
+    height: 3px;
+    background-color: #376AC5;
+    border-radius: 2px;
+    transition: transform 0.3s ease;
+}
+
+.burger div:not(:first-child) {
+    margin-top: 3px;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(233, 232, 232);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 40;
+    padding-top: 40px;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+}
+
+.menu.active {
+    transform: translateY(0);
+}
+
+.menu__content {
+    padding: 30px 15px;
+}
+
+.menu__sections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu__sections a {
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 50px;
+    color: #fff;
+    border: 1px solid #376AC5;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: #376AC5;
+}
+
+.menu__sections a:not(:first-child) {
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 992px) {
+    .sections-container {
+        display: block;
+    }
+
+    .burger,
+    .menu {
+        display: none;
+    }
+
+    .logo a{
+        font-size: 26px;
+    }
+    
+}
