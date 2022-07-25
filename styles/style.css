@@ -20,8 +20,7 @@ body {
     padding: 0;
     margin: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    min-width: 320px;
 }
 
 a {
@@ -30,12 +29,12 @@ a {
 }
 
 .body-content {
-    width: 320px;
+    width: 100%;
 }
 
 .header {
     position: fixed;
-    z-index: 50;
+    z-index: 100;
     top: 0;
     left: 0;
     width: 100%;
@@ -98,7 +97,7 @@ a {
 }
 
 .header__sections a:not(:first-child){
-    padding-left: 70px;
+    padding-left: 20px;
 }
 
 .contacts {
@@ -108,27 +107,29 @@ a {
 }
 
 .contacts__info {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    margin-right: 15px;
 }
 
 .contacts__phone {
     font-family: 'Commissioner';
     font-style: normal;
     font-weight: 700;
-    font-size: 8px;
-    line-height: 14px;
+    font-size: 20px;
+    line-height: 24px;
     color: #3C3A3B;
+    margin-left: auto;
 }
 
 .contacts__mail {
     font-family: 'Commissioner';
     font-style: normal;
     font-weight: 400;
-    font-size: 8px;
-    line-height: 14px;
+    font-size: 17px;
+    line-height: 24px;
     text-align: right;
     color: #929292;
 }
@@ -142,6 +143,9 @@ a {
     border-radius: 6px;
     position: relative;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .button__content {
@@ -209,6 +213,7 @@ a {
     background-color: #376AC5;
     border-radius: 2px;
     transition: transform 0.3s ease;
+    margin: auto;
 }
 
 .burger div:not(:first-child) {
@@ -219,12 +224,12 @@ a {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: rgb(233, 232, 232);
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 40;
+    z-index: 90;
     padding-top: 40px;
     transform: translateY(-100%);
     transition: transform 0.3s ease;
@@ -265,15 +270,25 @@ a {
     margin-top: 10px;
 }
 
-
-
-
-
-
-
-
-
-
+@media(min-width: 768px) {
+    .button{
+        width: 130px;
+        height: 40px;
+    }
+    .burger{
+        width: 40px;
+        height: 40px;
+        padding: 5px 8px 5px 8px;
+        margin-left: 10px;
+    }
+    .burger div{
+        margin: auto;
+    }
+    .burger.active div{
+        margin-left: 5px;
+        margin-top: 7px;
+    }
+}
 @media(min-width: 992px) {
     .sections-container {
         display: block;
@@ -288,4 +303,297 @@ a {
         font-size: 26px;
     }
     
+    .button{
+        width: 180px;
+        height: 50px;
+    }
+    .button__content{
+        font-size: 14px;
+    }
+    .button__arrow-img{
+        width: 20px;
+    }
+    .contacts__info{
+        display: flex;
+    }
+    .header{
+        background-color: transparent;
+    }
+}
+
+.main-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 80px;
+    position: relative;
+}
+
+.main-info__background{
+    left: 0;
+    position: absolute;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.main-info__background img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.splash-stones{
+    position: absolute;
+    left: 0;
+    z-index: 30;
+    margin-top: 20px;
+    display: none;
+}
+
+.main-info__content{
+    max-width: 1240px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 80;
+    margin-top: 20px;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.about-info{
+    width: 100%;
+    left: 0;
+}
+.about-info__main p{
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 40px;
+    color: #3C3A3B;
+    left: 0;
+}
+.about-info__main span{
+    color: #376AC5;
+}
+.about-info__discription{
+    font-family: 'Commissioner';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #3C3A3B;
+}
+
+.delivery-button{
+    width: 180px;
+    height: 45px;
+    background: linear-gradient(265.28deg, #376AC5 3.85%, #5F98FF 93.14%);
+    box-shadow: 0px 6px 20px #B0CCFF, inset 0px 0px 4px #C6DAFF;
+    border-radius: 6px;
+}
+.delivery-button__content{
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #DEEAFF;
+}
+
+.dignity{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 0 0 auto;
+    width: 60%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.dignity__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dignity__images{
+    position: relative;
+}
+.star{
+    position: absolute;
+    right: 0;
+    margin-top: -25px;
+    margin-right: -20px;
+}
+.dignity__content{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Commissioner';
+    font-style: italic;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 24px;
+    color: #3C3A3B;
+    width: 140px;
+}
+.dignity__content span{
+    font-weight: 400;
+}
+.builder{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 100%;
+}
+.builder-image{
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+    top: 40px;
+}
+.builder-image img{
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width: 992px){
+    .splash-stones{
+        display: block;
+    }
+    .main-info__background{
+        display: block;
+    }
+    .builder{
+        display: flex;
+    }
+    .about-info{
+        width: 60%;
+    }
+    .dignity{
+        flex-direction: row;
+        align-items: center;
+    }
+    .about-info__main p{
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 46px;
+        line-height: 68px;
+        color: #3C3A3B;
+        left: 0;
+    }
+    .main-info__content{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .delivery-button{
+        width: 309px;
+        height: 80px;
+        background: linear-gradient(265.28deg, #376AC5 3.85%, #5F98FF 93.14%);
+        box-shadow: 0px 6px 20px #B0CCFF, inset 0px 0px 4px #C6DAFF;
+        border-radius: 6px;
+    }
+    .delivery-button__content{
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #DEEAFF;
+    }
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.calculator{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px #EDEDED;
+    border-radius: 16px;
+}
+.calculator span{
+    color: #F1A228;
+}
+.calculator__title{
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 40px;
+    text-align: center;
+    color: #3C3A3B;
+}
+.calculator__title span{
+    color: #376AC5;
+}
+.concrete-type{
+    width: 100%;
+}
+
+.concrete-type__input select{
+    width: 100%;
+    height: 50px;
+}
+.input-title{
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    color: #3C3A3B;
+}
+.necessarily p{
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+.agreement p{
+    font-family: 'Commissioner';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #929292;
+}
+.volume{
+    width: 100%;
+}
+.phone{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.address{
+    width: 100%;
+}
+.calculator input{
+    width: 100%;
+    height: 50px;
+    border: none;
+    border: 1px solid #929292;
+    border-radius: 6px;
 }
