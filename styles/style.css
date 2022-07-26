@@ -77,7 +77,7 @@ a {
     color: #F1A228;
 }
 
-.sections-container{
+.sections-container {
     display: none;
 }
 
@@ -96,7 +96,7 @@ a {
     color: #929292;
 }
 
-.header__sections a:not(:first-child){
+.header__sections a:not(:first-child) {
     padding-left: 20px;
 }
 
@@ -147,12 +147,13 @@ a {
     align-items: center;
     justify-content: center;
 }
-
+.call-button{
+    font-size: 8px;
+}
 .button__content {
     font-family: 'Commissioner';
     font-style: normal;
     font-weight: 500;
-    font-size: 8px;
     line-height: 12px;
     text-align: right;
     text-transform: uppercase;
@@ -271,24 +272,28 @@ a {
 }
 
 @media(min-width: 768px) {
-    .button{
+    .button {
         width: 130px;
         height: 40px;
     }
-    .burger{
+
+    .burger {
         width: 40px;
         height: 40px;
         padding: 5px 8px 5px 8px;
         margin-left: 10px;
     }
-    .burger div{
+
+    .burger div {
         margin: auto;
     }
-    .burger.active div{
+
+    .burger.active div {
         margin-left: 5px;
         margin-top: 7px;
     }
 }
+
 @media(min-width: 992px) {
     .sections-container {
         display: block;
@@ -299,29 +304,33 @@ a {
         display: none;
     }
 
-    .logo a{
+    .logo a {
         font-size: 26px;
     }
-    
-    .button{
+
+    .button {
         width: 180px;
         height: 50px;
     }
-    .button__content{
+
+    .call-button {
         font-size: 14px;
     }
-    .button__arrow-img{
+
+    .button__arrow-img {
         width: 20px;
     }
-    .contacts__info{
+
+    .contacts__info {
         display: flex;
     }
-    .header{
+
+    .header {
         background-color: transparent;
     }
 }
 
-.main-info{
+.main-info {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -330,7 +339,7 @@ a {
     position: relative;
 }
 
-.main-info__background{
+.main-info__background {
     left: 0;
     position: absolute;
     z-index: 20;
@@ -338,13 +347,15 @@ a {
     height: 100%;
     display: none;
 }
-.main-info__background img{
+
+.main-info__background img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 
 }
-.splash-stones{
+
+.splash-stones {
     position: absolute;
     left: 0;
     z-index: 30;
@@ -352,7 +363,7 @@ a {
     display: none;
 }
 
-.main-info__content{
+.main-info__content {
     max-width: 1240px;
     display: flex;
     align-items: center;
@@ -364,11 +375,16 @@ a {
     padding-right: 15px;
 }
 
-.about-info{
+.about-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     left: 0;
 }
-.about-info__main p{
+
+.about-info__main p {
     font-family: 'Commissioner';
     font-style: normal;
     font-weight: 600;
@@ -377,10 +393,12 @@ a {
     color: #3C3A3B;
     left: 0;
 }
-.about-info__main span{
+
+.about-info__main span {
     color: #376AC5;
 }
-.about-info__discription{
+
+.about-info__discription {
     font-family: 'Commissioner';
     font-style: italic;
     font-weight: 400;
@@ -389,14 +407,15 @@ a {
     color: #3C3A3B;
 }
 
-.delivery-button{
+.delivery-button {
     width: 180px;
     height: 45px;
     background: linear-gradient(265.28deg, #376AC5 3.85%, #5F98FF 93.14%);
     box-shadow: 0px 6px 20px #B0CCFF, inset 0px 0px 4px #C6DAFF;
     border-radius: 6px;
 }
-.delivery-button__content{
+
+.delivery-button__content {
     font-family: 'Commissioner';
     font-style: normal;
     font-weight: 700;
@@ -406,7 +425,7 @@ a {
     color: #DEEAFF;
 }
 
-.dignity{
+.dignity {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -416,22 +435,28 @@ a {
     padding-bottom: 20px;
 }
 
-.dignity__item{
+.dignity__item {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.dignity__images{
+.dignity__cement {
+    margin-left: -10px;
+}
+
+.dignity__images {
     position: relative;
 }
-.star{
+
+.star {
     position: absolute;
     right: 0;
     margin-top: -25px;
     margin-right: -20px;
 }
-.dignity__content{
+
+.dignity__content {
     margin-left: 10px;
     display: flex;
     align-items: center;
@@ -444,17 +469,20 @@ a {
     color: #3C3A3B;
     width: 140px;
 }
-.dignity__content span{
+
+.dignity__content span {
     font-weight: 400;
 }
-.builder{
+
+.builder {
     display: none;
     align-items: center;
     justify-content: center;
     width: 40%;
     height: 100%;
 }
-.builder-image{
+
+.builder-image {
     display: flex;
     align-items: flex-start;
     height: 100%;
@@ -462,29 +490,36 @@ a {
     position: absolute;
     top: 40px;
 }
-.builder-image img{
+
+.builder-image img {
     width: 100%;
     height: 100%;
 }
 
-@media(min-width: 992px){
-    .splash-stones{
+@media(min-width: 992px) {
+    .splash-stones {
         display: block;
     }
-    .main-info__background{
+
+    .main-info__background {
         display: block;
     }
-    .builder{
+
+    .builder {
         display: flex;
     }
-    .about-info{
+
+    .about-info {
         width: 60%;
+        display: block;
     }
-    .dignity{
+
+    .dignity {
         flex-direction: row;
         align-items: center;
     }
-    .about-info__main p{
+
+    .about-info__main p {
         font-family: 'Commissioner';
         font-style: normal;
         font-weight: 600;
@@ -493,18 +528,21 @@ a {
         color: #3C3A3B;
         left: 0;
     }
-    .main-info__content{
+
+    .main-info__content {
         padding-left: 0;
         padding-right: 0;
     }
-    .delivery-button{
+
+    .delivery-button {
         width: 309px;
         height: 80px;
         background: linear-gradient(265.28deg, #376AC5 3.85%, #5F98FF 93.14%);
         box-shadow: 0px 6px 20px #B0CCFF, inset 0px 0px 4px #C6DAFF;
         border-radius: 6px;
     }
-    .delivery-button__content{
+
+    .delivery-button__content {
         font-family: 'Commissioner';
         font-style: normal;
         font-weight: 700;
@@ -515,13 +553,21 @@ a {
     }
 }
 
-.price{
+.price {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    position: relative;
 }
-.calculator{
+.stones-back{
+    position: absolute;
+    right: 0;
+    top: 500px;
+    display: none;
+}
+
+.calculator {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -529,11 +575,20 @@ a {
     background: #FFFFFF;
     box-shadow: 0px 4px 20px #EDEDED;
     border-radius: 16px;
+    padding: 30px 15px;
+    z-index: 81;
+    position: relative;
 }
-.calculator span{
+
+.kamaz {
+    display: none;
+}
+
+.calculator span {
     color: #F1A228;
 }
-.calculator__title{
+
+.calculator__title {
     font-family: 'Commissioner';
     font-style: normal;
     font-weight: 400;
@@ -542,18 +597,21 @@ a {
     text-align: center;
     color: #3C3A3B;
 }
-.calculator__title span{
+
+.calculator__title span {
     color: #376AC5;
 }
-.concrete-type{
+
+.concrete-type {
     width: 100%;
 }
 
-.concrete-type__input select{
+.concrete-type__input select {
     width: 100%;
     height: 50px;
 }
-.input-title{
+
+.input-title {
     font-family: 'Commissioner';
     font-style: normal;
     font-weight: 400;
@@ -561,14 +619,16 @@ a {
     line-height: 24px;
     color: #3C3A3B;
 }
-.necessarily p{
+
+.necessarily p {
     font-family: 'Commissioner';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
 }
-.agreement p{
+
+.agreement p {
     font-family: 'Commissioner';
     font-style: italic;
     font-weight: 400;
@@ -577,23 +637,385 @@ a {
     text-align: center;
     color: #929292;
 }
-.volume{
+
+.volume {
     width: 100%;
 }
-.phone{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.address{
+
+.phone {
     width: 100%;
 }
-.calculator input{
+
+input,
+select {
+    background-color: #DFDFDF;
+    outline: none;
+    padding: .6em 1.4em .5em .8em;
+    width: 100%;
+}
+
+select:focus {
+    border-color: #376AC5;
+    background: #FFFFFF;
+}
+
+.calculator input:focus {
+    border: none;
+    border-color: #376AC5;
+    border: 1px solid #376AC5;
+    background: #FFFFFF;
+}
+
+input::placeholder,
+select {
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    color: #929292;
+}
+
+.address {
+    width: 100%;
+}
+
+.calculator input {
     width: 100%;
     height: 50px;
     border: none;
     border: 1px solid #929292;
     border-radius: 6px;
+}
+
+.cost-button {
+    background: linear-gradient(265.28deg, #376AC5 3.85%, #5F98FF 93.14%);
+    box-shadow: 0px 6px 20px #B0CCFF, inset 0px 0px 4px #C6DAFF;
+    border-radius: 6px;
+    width: 150px;
+    height: 50px;
+}
+
+.cost-button {
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #DEEAFF;
+}
+
+.calculator-conventions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.select {
+    display: block;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #444;
+    line-height: 1.3;
+    padding: .6em 1.4em .5em .8em;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    border-radius: 6px;
+    background-image: url('../images/arrow-bot.svg');
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    color: #929292;
+    border: none;
+    border: 1px solid #929292;
+}
+
+.disabled-option {
+    display: none;
+}
+
+.is-scrolled .header {
+    background-color: white;
+}
+
+.price-list {
+    min-width: 320px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-prices {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 15px;
+}
+
+.our-prices__title {
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    color: #3C3A3B;
+}
+
+.our-prices__title span {
+    color: #376AC5;
+}
+
+.price-table {
+    z-index: 81;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px #EDEDED;
+    border-radius: 16px;
+    width: 80%;
+    max-width: 1240px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    justify-content: center;
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3C3A3B;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.price-table span {
+    color: #376AC5;
+    font-weight: 600;
+}
+
+.price-table__categories {
+    padding: 20px 50px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: #F2F2F2;
+}
+
+.price-table__item {
+    padding: 20px 50px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 1px solid #E9E9E9;
+}
+
+.first-column {
+    width: 80px;
+}
+
+.second-column {
+    width: 200px;
+}
+
+.price-table__categories,
+.price-table__item {
+    height: 70px;
+    align-items: center;
+}
+.swiper{
+    width: 800px;
+}
+
+.material {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 800px;
+    padding: 20px 100px;
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #3C3A3B;
+}
+
+.material img {
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50%;
+    margin-bottom: 50%;
+}
+
+.material__item {
+    display: flex;
+    flex: 0 0 20%;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid transparent;
+}
+
+.material__item:hover {
+    border-bottom: 1px solid #376AC5;
+    color: #376AC5;
+}
+
+.material p {
+    padding-left: 10px;
+}
+
+.price-list__page {
+    width: 100%;
+}
+.price-table__buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0 50px 0;
+    position: absolute;
+    right: 15%;
+    left: 15%;
+}
+.make-offer-button{
+    width: 200px;
+    height: 50px;
+    font-size: 11px;
+    background: linear-gradient(265.28deg, #376AC5 3.85%, #5F98FF 93.14%);
+    box-shadow: 0px 6px 20px #B0CCFF, inset 0px 0px 4px #C6DAFF;
+    border-radius: 6px;
+    position: relative;
+} 
+.stock-button{
+    position: absolute;
+    font-size: 12px;
+    top: 0;
+    margin-top: -30px;
+    height: 40px;
+    transform: rotate(5deg);
+    box-shadow: none;
+    border: 2px solid #FFFFFF;
+    display: none;
+}
+
+/* .table-slide{
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.material{
+    overflow-x: auto;
+    overflow-y: hidden;
+} */
+
+@media(min-width: 992px) {
+    .price {
+        background: url(../images/cement-background.png) no-repeat;
+        background-size: 100%;
+        flex-direction: row;
+    }
+    .stones-back{
+        display: block;
+    }
+
+    .calculator {
+        width: 80%;
+        max-width: 1240px;
+        align-items: center;
+    }
+
+    .calculator__title {
+        font-size: 42px;
+        line-height: 52px;
+    }
+
+    .calculator__inputs {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .concrete-type,
+    .volume,
+    .phone,
+    .address {
+        flex: 0 0 50%;
+        padding: 0 15px;
+    }
+
+    .price__wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cost-button {
+        width: 300px;
+        height: 80px;
+    }
+
+    .cost-button__content {
+        font-size: 18px;
+    }
+
+    .cost-arrow {
+        width: 18px;
+    }
+
+    .kamaz {
+        display: block;
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        margin: 0 0 -150px -150px;
+    }
+    .first-column {
+        width: 15%;
+    }
+    
+    .second-column {
+        width: 30%;
+    }
+    .our-prices{
+        width: 100%;
+    }
+    .price-list{
+        width: 100%;
+    }
+    .price-table{
+        width: 100%;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .material{
+        width: 100%;
+    }
+    .make-offer-button{
+        width: 300px;
+        height: 70px;
+        font-size: 15px;
+    }
+    .stock-button{
+        display: flex;
+    }
+    .price-table__buttons{
+        position: static;
+    }
 }
