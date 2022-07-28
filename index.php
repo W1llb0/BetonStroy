@@ -46,7 +46,7 @@
                                 class="contacts__mail">info_beton_stroy@domen.ru</a>
                         </div>
                         <button type="button" class="button">
-                            <a href="#">
+                            <a href="#popup" class="popup__link">
                                 <img src="images/right-arrow.svg" class="button__arrow-img">
                                 <div class="button__content call-button">
                                     ЗАКАЗАТЬ ЗВОНОК
@@ -242,7 +242,7 @@
                                         <img src="images/expanded-clay.png" alt="">
                                     </div>
                                     <div class="expanded-clay__title">
-                                        <p>Керамзит</p>
+                                        <p>Тощий бетон</p>
                                     </div>
                                 </div>
                                 <div class="material__RSG-solution material__item" id="material__RSG-solution">
@@ -826,23 +826,72 @@
                                 </div>
                                 <div class="phone__content-text">
                                     <div class="phone-text">
-                                        <p>+7 (495) 478 12 32</p>
+                                        <p>+7 495 478-12-32 (Диспетчерская)</p>
+                                        <p>+7 495 478-12-32 (Отдел продаж)</p>
                                     </div>
                                     <div class="mail-text">
-                                        <p>info_beton_stroy@domen.ru</p>
+                                        <p>http://Zakaz@завод-бетон-строй.рф/</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="info__button button">
-                        <a href="#">
+                        <a href="#popup" class="popup__link">
                             <img src="images/right-arrow.svg" class="button__arrow-img">
                             <div class="button__content call-button">
                                 ЗАКАЗАТЬ ЗВОНОК
                             </div>
                         </a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <div class="ellipse">
+                </div>
+                <div class="popup__content-item">
+                    <a href="" class="popup__close close-popup">
+                        <img src="images/close.svg" alt="">
+                    </a>
+                    <div class="popup__title">
+                        <p>Заказать <span>звонок</span></p>
+                    </div>
+                    <form action="scripts/script.php" method="post" class="popup__form">
+                        <div class="form__name">
+                            <div class="form__name-title">
+                                <p>Ваше имя<span>*</span></p>
+                            </div>
+                            <input type="text" id="name" name="name" placeholder="Введите ваше имя..." required>
+                        </div>
+                        <div class="form__phone">
+                            <div class="form__phone-title">
+                                <p>Номер телефона<span>*</span></p>
+                            </div>
+                            <input type="tel" id="phone" name="phone" placeholder="Введите Ваш номер..." required>
+                        </div>
+                        <div class="form__description">
+                            <p><span>*</span>Обязательные поля для заполнения</p>
+                        </div>
+                        <div class="form__submit button">
+                            <div class="button__content call-button">
+                                ЗАКАЗАТЬ ЗВОНОК
+                            </div>
+                            <input type="submit" value="ЗАКАЗАТЬ ЗВОНОК" class="submit-button">
+                            <a href="#">
+                                <img src="images/right-arrow.svg" class="button__arrow-img form-arrow">
+                            </a>
+                        </div>
+                        <div class="form__description2">
+                            <p>Нажимая на кнопку, Вы даёте согласие на использование своих персональных данных.</p>
+                        </div>
+                    </form>
+                </div>
+                <div class="popup__image">
+                    <img src="images/builder.png" alt="">
                 </div>
             </div>
         </div>
@@ -890,7 +939,7 @@
             </div>
         </div>
     </footer>
-
+    <?php include_once("scripts/script.php"); ?>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="scripts/script.js"></script>
 </body>
