@@ -42,14 +42,12 @@
                             <a href="tel:+74954781232" class="contacts__phone">+7 (495) 478 12 32</a>
                             <a href="mailto:info_beton_stroy@domen.ru" class="contacts__mail">info_beton_stroy@domen.ru</a>
                         </div>
-                        <button type="button" class="button">
-                            <a href="#popup" class="popup__link">
-                                <img src="images/right-arrow.svg" class="button__arrow-img">
-                                <div class="button__content call-button">
-                                    ЗАКАЗАТЬ ЗВОНОК
-                                </div>
-                            </a>
-                        </button>
+                        <div class="header__button">
+                            <button class="button-main button-main_small button-main_sale button-main_color-orange popup__link" href="#popup">
+                                <div class="button-main__content">Заказать звонок</div>
+                                <div class="button-main__arrow"></div>
+                            </button>
+                        </div>
                         <div class="burger">
                             <div></div>
                             <div></div>
@@ -95,14 +93,10 @@
                     <div class="about-info__discription">
                         <p>Подробности уточняйте у менеджера!</p>
                     </div>
-                    <div class="button delivery-button">
-                        <a href="#">
-                            <img src="images/right-arrow.svg" class="button__arrow-img">
-                            <div class="button__content delivery-button__content">
-                                ЗАКАЗАТЬ ДОСТАВКУ
-                            </div>
-                        </a>
-                    </div>
+                    <button class="button-main button-main_color-blue popup__link" href="#popup">
+                        <div class="button-main__content">ЗАКАЗАТЬ ДОСТАВКУ</div>
+                        <div class="button-main__arrow"></div>
+                    </button>
                     <div class="dignity">
                         <div class="dignity__item">
                             <div class="dignity__images">
@@ -145,71 +139,76 @@
                 <img src="images/stones.png" alt="">
             </div>
             <div class="price__wrapper">
-                <div class="calculator">
+                <form class="calculator" id="calculator">
+                    <input type="hidden" name="type" value="calculator">
                     <div class="calculator__title">
                         <p>Калькулятор цены <span>без учёта доставки</span></p>
                     </div>
                     <div class="calculator__inputs">
-                        <div class="concrete-type">
-                            <div class="concrete-type__title input-title">
-                                <p>Выберите тип бетона<span>*</span></p>
-                            </div>
-                            <div class="concrete-type__input">
-                                <select class="select">
-                                    <option value="" class="disabled-option" disabled selected>Выберите тип бетона из
-                                        списка</option>
-                                    <option value="1">Первый тип</option>
-                                    <option value="2">Второй тип</option>
-                                    <option value="3">Третий тип</option>
-                                    <option value="4">Четвертый тип</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="volume">
-                            <div class="volume__title input-title">
-                                <p>Введите объём, (м3)</p>
-                            </div>
-                            <div class="volume__input">
-                                <input type="number" placeholder="Введите кол-во объёма">
+                        <div class="calculator__input-block">
+                            <div class="form-block form-block_required">
+                                <label class="form-block__label">Выберите тип бетона</label>
+                                <div class="form-block__input">
+                                    <select class="input input_select" name="concrete" required>
+                                        <option value="" class="disabled-option" disabled selected>
+                                            Выберите тип бетона из списка
+                                        </option>
+                                        <option value="Первый тип">Первый тип</option>
+                                        <option value="Второй тип">Второй тип</option>
+                                        <option value="Третий тип">Третий тип</option>
+                                        <option value="Четвертый тип">Четвертый тип</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
-                        <div class="phone">
-                            <div class="phone__title input-title">
-                                <p>Номер телефона<span>*</span></p>
-                            </div>
-                            <div class="phone__input">
-                                <input type="tel" placeholder="Введите ваш номер">
+                        <div class="calculator__input-block">
+                            <div class="form-block form-block_required">
+                                <label class="form-block__label">Введите объём, (м3)</label>
+                                <div class="form-block__input">
+                                    <input class="input" type="number" name="volume" placeholder="Введите кол-во объёма" required>
+                                </div>
                             </div>
                         </div>
-                        <div class="address">
-                            <div class="address__title input-title">
-                                <p>Ваш адрес<span>*</span></p>
+                        <div class="calculator__input-block">
+                            <div class="form-block form-block_required">
+                                <label class="form-block__label">Номер телефона</label>
+                                <div class="form-block__input">
+                                    <input class="input" type="tel" name="phone" placeholder="Введите ваш номер" required>
+                                </div>
                             </div>
-                            <div class="address__input">
-                                <input type="text" placeholder="Введите ваш адрес">
+                        </div>
+                        <div class="calculator__input-block">
+                            <div class="form-block form-block_required">
+                                <label class="form-block__label">Ваш адрес</label>
+                                <div class="form-block__input">
+                                    <input class="input" type="text" name="address" placeholder="Введите ваш адрес" required>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="calculator-conventions">
-                        <div class="necessarily">
-                            <p><span>*</span>Обязательные поля для заполнения</p>
+                    <div class="calculator__required-text">
+                        <div class="required-text required-text_align-center">
+                            Обязательные поля для заполнения
                         </div>
-                        <div class="button cost-button">
-                            <a href="#">
-                                <img src="images/right-arrow.svg" class="button__arrow-img cost-arrow">
-                                <div class="button__content cost-button__content">
-                                    УЗНАТЬ СТОИМОСТЬ
-                                </div>
-                            </a>
+                    </div>
+                    <div class="message"></div>
+                    <div class="calculator__bottom">
+                        <div class="calculator__button">
+                            <button class="button-main button-main_color-blue">
+                                <div class="button-main__content">Узнать стоимость</div>
+                                <div class="button-main__arrow"></div>
+                            </button>
                         </div>
-                        <div class="agreement">
-                            <p>Нажимая на кнопку, Вы даёте согласие на использование своих персональных данных.</p>
+                        <div class="calculator__agreement">
+                            <div class="agreement">
+                                <p>Нажимая на кнопку, Вы даёте согласие на использование своих персональных данных.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="kamaz">
                         <img src="images/kamaz.png" alt="">
                     </div>
-                </div>
+                </form>
                 <div class="price-list">
                     <div class="our-prices">
                         <div class="our-prices__title">
@@ -665,20 +664,12 @@
                                 </div>
                             </div>
                             <div class="price-table__buttons">
-                                <div class="button make-offer-button">
-                                    <div class="button stock-button">
-                                        <a href="#">
-                                            <div class="button__content stock-button__text">
-                                                С БЕСПЛАТНОЙ ДОСТАВКОЙ
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <a href="#">
-                                        <img src="images/right-arrow.svg" class="button__arrow-img">
-                                        <div class="button__content make-offer-button__text">
-                                            ЗАКАЖИ БЕТОН ПРЯМО СЕЙЧАС
-                                        </div>
-                                    </a>
+                                <div class="button-main-sale-block button-main-sale-block_color-blue">
+                                    <div class="button-main-sale-block__sale">С бесплатной доставкой</div>
+                                    <button class="button-main button-main_sale button-main_color-blue popup__link" href="#popup">
+                                        <div class="button-main__content">Закажи бетон прямо сейчас</div>
+                                        <div class="button-main__arrow"></div>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -748,14 +739,11 @@
                     </div>
                 </div>
             </div>
-            <div class="virtues-button button">
-                <a href="#">
-                    <img src="images/right-arrow.svg" class="button__arrow-img">
-                    <div class="button__content virtues-button__text">
-                        УЗНАТЬ СТОИМОСТЬ
-                    </div>
-                </a>
-            </div>
+            <button class="button-main button-main_sale button-main_color-blue popup__link" href="#popup">
+                <div class="button-main__content">Узнать стоимость</div>
+                <div class="button-main__arrow"></div>
+            </button>
+
         </div>
         <div class="laboratory">
             <div class="laboratory__wrapper">
@@ -766,14 +754,11 @@
                     <div class="laboratory__info-terms">
                         <p>Подготовим результат проверки продукции на 8-ые и 28-ые сутки после заливки (по запросу).</p>
                     </div>
-                    <div class="laboratory__button button">
-                        <a href="#">
-                            <img src="images/right-arrow.svg" class="button__arrow-img">
-                            <div class="button__content laboratory__button-text">
-                                ЗАКАЗАТЬ ПРЯМО СЕЙЧАС
-                            </div>
-                        </a>
-                    </div>
+                    <button class="button-main button-main_sale button-main_color-blue popup__link" href="#popup">
+                        <div class="button-main__content">Заказать прямо сейчас</div>
+                        <div class="button-main__arrow"></div>
+                    </button>
+
                     <div class="laboratory__adds">
                         <p>*При условии заказа нашего бетона</p>
                     </div>
@@ -829,14 +814,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="info__button button">
-                        <a href="#popup" class="popup__link">
-                            <img src="images/right-arrow.svg" class="button__arrow-img">
-                            <div class="button__content call-button">
-                                ЗАКАЗАТЬ ЗВОНОК
-                            </div>
-                        </a>
-                    </div>
+                    <button class="button-main button-main_sale button-main_color-orange popup__link" href="#popup">
+                        <div class="button-main__content">Заказать звонок</div>
+                        <div class="button-main__arrow"></div>
+                    </button>
                 </div>
             </div>
         </div>
@@ -844,48 +825,53 @@
     <div id="popup" class="popup">
         <div class="popup__body">
             <div class="popup__content">
-                <div class="ellipse">
+                <div class="popup__close close-popup">
                 </div>
-                <div class="popup__content-item">
-                    <a href="" class="popup__close close-popup">
-                        <img src="images/close.svg" alt="">
-                    </a>
-                    <div class="popup__title">
-                        <p>Заказать <span>звонок</span></p>
+                <div class="modal-form">
+                    <div class="modal-form__title">
+                        Заказать <span class="modal-form__orange">звонок</span>
                     </div>
-                    <form action="scripts/script.php" method="post" class="popup__form" id="message-form">
-                        <div class="form__name">
-                            <div class="form__name-title">
-                                <p>Ваше имя<span>*</span></p>
+                    <form class="modal-form__content">
+                        <input type="hidden" name="type" value="message">
+                        <div class="modal-form__inputs">
+                            <div class="modal-form__input-block">
+                                <div class="form-block form-block_required">
+                                    <label for="" class="form-block__label">Ваше имя</label>
+                                    <div class="form-block__input">
+                                        <input type="text" name="name" class="input" required>
+                                    </div>
+                                </div>
                             </div>
-                            <input type="text" id="name" name="name" placeholder="Введите ваше имя..." required>
-                        </div>
-                        <div class="form__phone">
-                            <div class="form__phone-title">
-                                <p>Номер телефона<span>*</span></p>
+                            <div class="modal-form__input-block">
+                                <div class="form-block form-block_required">
+                                    <label for="" class="form-block__label">Номер телефона</label>
+                                    <div class="form-block__input">
+                                        <input type="tel" name="phone" class="input" required>
+                                    </div>
+                                </div>
                             </div>
-                            <input type="tel" id="phone" name="phone" placeholder="Введите Ваш номер..." required>
                         </div>
-                        <div class="form__description">
-                            <p><span>*</span>Обязательные поля для заполнения</p>
-                        </div>
-                        <div class="form__submit button">
-                            <div class="button__content call-button">
-                                ЗАКАЗАТЬ ЗВОНОК
+                        <div class="modal-form__required-text">
+                            <div class="required-text">
+                                Обязательные поля для заполнения
                             </div>
-                            <input type="submit" value="ЗАКАЗАТЬ ЗВОНОК" class="submit-button">
-                            <a href="#">
-                                <img src="images/right-arrow.svg" class="button__arrow-img form-arrow">
-                            </a>
                         </div>
-                        <div class="form__description2">
-                            <p>Нажимая на кнопку, Вы даёте согласие на использование своих персональных данных.</p>
+                        <div class="message"></div>
+                        <div class="modal-form__button">
+                            <button class="button-main button-main_color-orange">
+                                <div class="button-main__content">Заказать звонок</div>
+                                <div class="button-main__arrow"></div>
+                            </button>
                         </div>
-                        <div class="form__message"></div>
+                        <div class="modal-form__agreement">
+                            <div class="agreement">
+                                <p>Нажимая на кнопку, Вы даёте согласие на использование своих персональных данных.</p>
+                            </div>
+                        </div>
                     </form>
-                </div>
-                <div class="popup__image">
-                    <img src="images/builder.png" alt="">
+                    <div class="modal-form__img-block">
+                        <img src="./images/builder.png" alt="" class="modal-form__img">
+                    </div>
                 </div>
             </div>
         </div>

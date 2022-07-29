@@ -100,27 +100,26 @@ function popupClose(curentPopup) {
   curentPopup.classList.remove("open");
 }
 
-const form = document.getElementById("message-form");
-if (form) {
-  const formMessageBlock = form.querySelector(".form__message");
+const formList = document.querySelectorAll("form");
+
+formList.forEach((form) => {
+  const formMessageBlock = form.querySelector(".message");
   form.addEventListener("submit", (event) => {
     formMessageBlock.innerHTML = "";
     const formData = new FormData(form);
     event.preventDefault();
-    fetch("./scripts/script.php", {
+    fetch("/scripts/script.php", {
       method: "POST",
       body: formData,
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
-
         let alertBlock = document.createElement("div");
         alertBlock.classList.add("alert");
 
         if (data.success) {
           form
-            .querySelectorAll("input")
+            .querySelectorAll("input:not([type=hidden])")
             .forEach((element) => (element.value = ""));
           alertBlock.classList.add("alert_success");
         } else {
@@ -130,4 +129,76 @@ if (form) {
         formMessageBlock.append(alertBlock);
       });
   });
-}
+});
+
+const selectList = document.querySelectorAll("select");
+selectList.forEach((select) => {
+  checkValue();
+
+  select.addEventListener("change", (_) => {
+    checkValue();
+  });
+
+  function checkValue() {
+    if (select.value === "") {
+      addNotSelectedClass();
+    } else {
+      removeNotSelectedClass();
+    }
+  }
+  function addNotSelectedClass() {
+    select.classList.add("input_select-not-selected");
+  }
+  function removeNotSelectedClass() {
+    select.classList.remove("input_select-not-selected");
+  }
+});
+
+// Telephone Mask
+
+[].forEach.call(document.querySelectorAll("input[type=tel]"), function (input) {
+  var keyCode;
+  function mask(event) {
+    event.keyCode && (keyCode = event.keyCode);
+    var pos = this.selectionStart;
+    if (pos < 3) {
+      this.selectionStart = 3;
+    }
+    var matrix = "+7 (___)-___-__-__",
+      i = 0,
+      def = matrix.replace(/\D/g, ""),
+      val = this.value.replace(/\D/g, ""),
+      new_value = matrix.replace(/[_\d]/g, function (a) {
+        return i < val.length ? val.charAt(i++) || def.charAt(i) : a;
+      });
+    i = new_value.indexOf("_");
+    if (i != -1) {
+      i < 5 && (i = 3);
+      new_value = new_value.slice(0, i);
+    }
+    var reg = matrix
+      .substr(0, this.value.length)
+      .replace(/_+/g, function (a) {
+        return "\\d{1," + a.length + "}";
+      })
+      .replace(/[+()]/g, "\\$&");
+    reg = new RegExp("^" + reg + "$");
+    if (
+      !reg.test(this.value) ||
+      this.value.length < 5 ||
+      (keyCode > 47 && keyCode < 58)
+    )
+      this.value = new_value;
+    if (
+      (event.type == "blur" || event.type == "change") &&
+      this.value.length < 5
+    )
+      this.value = "";
+  }
+
+  input.addEventListener("input", mask, false);
+  input.addEventListener("focus", mask, false);
+  input.addEventListener("blur", mask, false);
+  input.addEventListener("change", mask, false);
+  input.addEventListener("keydown", mask, false);
+});
