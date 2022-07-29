@@ -23,16 +23,16 @@
                     </div>
                     <div class="sections-container">
                         <div class="header__sections">
-                            <a href="#">
+                            <a href="#calculator">
                                 Калькулятор
                             </a>
-                            <a href="#">
+                            <a href="#our-prices">
                                 Цены
                             </a>
-                            <a href="#">
+                            <a href="#laboratory">
                                 Лаборатория
                             </a>
-                            <a href="#">
+                            <a href="#our-contacts">
                                 Контакты
                             </a>
                         </div>
@@ -63,16 +63,16 @@
                     <a href="#">
                         На главную
                     </a>
-                    <a href="#">
+                    <a href="#calculator">
                         Калькулятор
                     </a>
-                    <a href="#">
+                    <a href="#our-prices">
                         Цены
                     </a>
-                    <a href="#">
+                    <a href="#laboratory">
                         Лаборатория
                     </a>
-                    <a href="#">
+                    <a href="#our-contacts">
                         Контакты
                     </a>
                 </div>
@@ -210,7 +210,7 @@
                     </div>
                 </form>
                 <div class="price-list">
-                    <div class="our-prices">
+                    <div class="our-prices" id="our-prices">
                         <div class="our-prices__title">
                             <p>Наши <span>цены</span></p>
                         </div>
@@ -273,7 +273,7 @@
                                                         М100
                                                     </div>
                                                     <div class="second-column">
-                                                        Гравий П2-П4 F50 W2
+                                                        Гравий В7.5 F50 W2 П4
                                                     </div>
                                                     <div class="second-column">
                                                         БСГ В7,5
@@ -287,7 +287,7 @@
                                                         М150
                                                     </div>
                                                     <div class="second-column">
-                                                        Гравий П2-П4 F50 W2
+                                                        Гравий В12.5 F100 W4 П4
                                                     </div>
                                                     <div class="second-column">
                                                         БСГ В12,5
@@ -301,7 +301,7 @@
                                                         М200
                                                     </div>
                                                     <div class="second-column">
-                                                        Гравий П2-П4 F150-F200 W4-W6
+                                                        Гравий B15 F150 W4 П4
                                                     </div>
                                                     <div class="second-column">
                                                         БСГ В15
@@ -315,7 +315,7 @@
                                                         М250
                                                     </div>
                                                     <div class="second-column">
-                                                        Гравий П2-П4 F150-F200 W4-W6
+                                                        Гравий В20 F150 W4 П4
                                                     </div>
                                                     <div class="second-column">
                                                         БСГ В20
@@ -329,7 +329,7 @@
                                                         М300
                                                     </div>
                                                     <div class="second-column">
-                                                        Гравий П2-П4 F150-F200 W6-W8
+                                                        Гравий В22.5 F200 W6 П4
                                                     </div>
                                                     <div class="second-column">
                                                         БСГ В22,5
@@ -343,7 +343,193 @@
                                                         М350
                                                     </div>
                                                     <div class="second-column">
-                                                        Гравий П2-П4 F150-F200 W6-W8
+                                                        Гравий В25 F200 W8 П4
+                                                    </div>
+                                                    <div class="second-column">
+                                                        БСГ В25
+                                                    </div>
+                                                    <div class="first-column">
+                                                        <span>4 250 руб.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-table__item">
+                                                    <div class="first-column">
+                                                        М400
+                                                    </div>
+                                                    <div class="second-column">
+                                                        Гравий В30 F200 W10 П4
+                                                    </div>
+                                                    <div class="second-column">
+                                                        БСГ В25
+                                                    </div>
+                                                    <div class="first-column">
+                                                        <span>4 350 руб.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-table__item">
+                                                    <div class="first-column">
+                                                        М450
+                                                    </div>
+                                                    <div class="second-column">
+                                                        Гравий В35 F250 W12 П4
+                                                    </div>
+                                                    <div class="second-column">
+                                                        БСГ В25
+                                                    </div>
+                                                    <div class="first-column">
+                                                        <span>4 450 руб.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-table__item">
+                                                    <div class="first-column">
+                                                        М500
+                                                    </div>
+                                                    <div class="second-column">
+                                                        Гравий В40 F300 W12 П4
+                                                    </div>
+                                                    <div class="second-column">
+                                                        БСГ В25
+                                                    </div>
+                                                    <div class="first-column">
+                                                        <span>4 550 руб.</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide table-slide">
+                                            <div class="price-list__page">
+                                                <div class="price-table__categories">
+                                                    <div class="first-column">
+                                                        Марка
+                                                    </div>
+                                                    <div class="second-column">
+                                                        Наименование
+                                                    </div>
+                                                    <div class="second-column">
+                                                        класс
+                                                    </div>
+                                                    <div class="first-column">
+                                                        Цена за куб. с НДС
+                                                    </div>
+                                                </div>
+                                                <div class="price-table__item">
+                                                    <div class="first-column">
+                                                        М100
+                                                    </div>
+                                                    <div class="second-column">
+                                                        Гранит В7,5 F50 W4 П4
+                                                    </div>
+                                                    <div class="second-column">
+                                                        БСГ В7,5
+                                                    </div>
+                                                    <div class="first-column">
+                                                        <span>3 500 руб.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-table__item">
+                                                    <div class="first-column">
+                                                        М150
+                                                    </div>
+                                                    <div class="second-column">
+                                                        Гранит В12,5 F100 W4 П4
+                                                    </div>
+                                                    <div class="second-column">
+                                                        БСГ В12,5
+                                                    </div>
+                                                    <div class="first-column">
+                                                        <span>3 600 руб.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-table__item">
+                                                    <div class="first-column">
+                                                        М200
+                                                    </div>
+                                                    <div class="second-column">
+                                                        Гранит B15 F150 W4 П4
+                                                    </div>
+                                                    <div class="second-column">
+                                                        БСГ В15
+                                                    </div>
+                                                    <div class="first-column">
+                                                        <span>3 700 руб.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-table__item">
+                                                    <div class="first-column">
+                                                        М250
+                                                    </div>
+                                                    <div class="second-column">
+                                                        Гранит В20 F150 W4 П4
+                                                    </div>
+                                                    <div class="second-column">
+                                                        БСГ В20
+                                                    </div>
+                                                    <div class="first-column">
+                                                        <span>3 900 руб.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-table__item">
+                                                    <div class="first-column">
+                                                        М300
+                                                    </div>
+                                                    <div class="second-column">
+                                                        Гранит В22.5 F200 W6 П4
+                                                    </div>
+                                                    <div class="second-column">
+                                                        БСГ В22,5
+                                                    </div>
+                                                    <div class="first-column">
+                                                        <span>4 000 руб.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-table__item">
+                                                    <div class="first-column">
+                                                        М350
+                                                    </div>
+                                                    <div class="second-column">
+                                                        Гранит В25 F200 W8 П4
+                                                    </div>
+                                                    <div class="second-column">
+                                                        БСГ В25
+                                                    </div>
+                                                    <div class="first-column">
+                                                        <span>4 350 руб.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-table__item">
+                                                    <div class="first-column">
+                                                        М400
+                                                    </div>
+                                                    <div class="second-column">
+                                                        Гранит В30 F200 W10 П4
+                                                    </div>
+                                                    <div class="second-column">
+                                                        БСГ В25
+                                                    </div>
+                                                    <div class="first-column">
+                                                        <span>4 450 руб.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-table__item">
+                                                    <div class="first-column">
+                                                        М450
+                                                    </div>
+                                                    <div class="second-column">
+                                                        Гранит В35 F300 W12 П4
+                                                    </div>
+                                                    <div class="second-column">
+                                                        БСГ В25
+                                                    </div>
+                                                    <div class="first-column">
+                                                        <span>4 550 руб.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-table__item">
+                                                    <div class="first-column">
+                                                        М500
+                                                    </div>
+                                                    <div class="second-column">
+                                                        Гранит М500 В40 F300 W12 П4
                                                     </div>
                                                     <div class="second-column">
                                                         БСГ В25
@@ -375,7 +561,7 @@
                                                         М100
                                                     </div>
                                                     <div class="second-column">
-                                                        Гравий П2-П4 F50 W2
+                                                        Тощий бетон В7.5 Ж4 F50 W2
                                                     </div>
                                                     <div class="second-column">
                                                         БСГ В7,5
@@ -389,7 +575,7 @@
                                                         М150
                                                     </div>
                                                     <div class="second-column">
-                                                        Гравий П2-П4 F50 W2
+                                                        Тощий бетон В12.5 Ж4 F75 W4
                                                     </div>
                                                     <div class="second-column">
                                                         БСГ В12,5
@@ -403,7 +589,7 @@
                                                         М200
                                                     </div>
                                                     <div class="second-column">
-                                                        Гравий П2-П4 F150-F200 W4-W6
+                                                        Тощий бетон В15 Ж4 F100 W4
                                                     </div>
                                                     <div class="second-column">
                                                         БСГ В15
@@ -417,41 +603,13 @@
                                                         М250
                                                     </div>
                                                     <div class="second-column">
-                                                        Гравий П2-П4 F150-F200 W4-W6
+                                                        Тощий бетон В20 Ж4 F100 W4
                                                     </div>
                                                     <div class="second-column">
                                                         БСГ В20
                                                     </div>
                                                     <div class="first-column">
                                                         <span>3 900 руб.</span>
-                                                    </div>
-                                                </div>
-                                                <div class="price-table__item">
-                                                    <div class="first-column">
-                                                        М300
-                                                    </div>
-                                                    <div class="second-column">
-                                                        Гравий П2-П4 F150-F200 W6-W8
-                                                    </div>
-                                                    <div class="second-column">
-                                                        БСГ В22,5
-                                                    </div>
-                                                    <div class="first-column">
-                                                        <span>4 000 руб.</span>
-                                                    </div>
-                                                </div>
-                                                <div class="price-table__item">
-                                                    <div class="first-column">
-                                                        М350
-                                                    </div>
-                                                    <div class="second-column">
-                                                        Гравий П2-П4 F150-F200 W6-W8
-                                                    </div>
-                                                    <div class="second-column">
-                                                        БСГ В25
-                                                    </div>
-                                                    <div class="first-column">
-                                                        <span>4 250 руб.</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -477,13 +635,13 @@
                                                         М100
                                                     </div>
                                                     <div class="second-column">
-                                                        Гравий П2-П4 F50 W2
+                                                        Гравий(раствор) В7.5 F50 W2 П4
                                                     </div>
                                                     <div class="second-column">
                                                         БСГ В7,5
                                                     </div>
                                                     <div class="first-column">
-                                                        <span>3 500 руб.</span>
+                                                        <span>2 800 руб.</span>
                                                     </div>
                                                 </div>
                                                 <div class="price-table__item">
@@ -491,13 +649,13 @@
                                                         М150
                                                     </div>
                                                     <div class="second-column">
-                                                        Гравий П2-П4 F50 W2
+                                                        Гравий(раствор) В12.5 F100 W4 П4
                                                     </div>
                                                     <div class="second-column">
                                                         БСГ В12,5
                                                     </div>
                                                     <div class="first-column">
-                                                        <span>3 600 руб.</span>
+                                                        <span>2 880 руб.</span>
                                                     </div>
                                                 </div>
                                                 <div class="price-table__item">
@@ -505,13 +663,13 @@
                                                         М200
                                                     </div>
                                                     <div class="second-column">
-                                                        Гравий П2-П4 F150-F200 W4-W6
+                                                        Гравий(раствор) B15 F150 W4 П4
                                                     </div>
                                                     <div class="second-column">
                                                         БСГ В15
                                                     </div>
                                                     <div class="first-column">
-                                                        <span>3 700 руб.</span>
+                                                        <span>2 960 руб.</span>
                                                     </div>
                                                 </div>
                                                 <div class="price-table__item">
@@ -519,13 +677,13 @@
                                                         М250
                                                     </div>
                                                     <div class="second-column">
-                                                        Гравий П2-П4 F150-F200 W4-W6
+                                                        Гравий(раствор) В20 F150 W4 П4
                                                     </div>
                                                     <div class="second-column">
                                                         БСГ В20
                                                     </div>
                                                     <div class="first-column">
-                                                        <span>3 900 руб.</span>
+                                                        <span>3 120 руб.</span>
                                                     </div>
                                                 </div>
                                                 <div class="price-table__item">
@@ -533,45 +691,13 @@
                                                         М300
                                                     </div>
                                                     <div class="second-column">
-                                                        Гравий П2-П4 F150-F200 W6-W8
+                                                        Гравий(раствор) В22.5 F200 W6 П4
                                                     </div>
                                                     <div class="second-column">
                                                         БСГ В22,5
                                                     </div>
                                                     <div class="first-column">
-                                                        <span>4 000 руб.</span>
-                                                    </div>
-                                                </div>
-                                                <div class="price-table__item">
-                                                    <div class="first-column">
-                                                        М350
-                                                    </div>
-                                                    <div class="second-column">
-                                                        Гравий П2-П4 F150-F200 W6-W8
-                                                    </div>
-                                                    <div class="second-column">
-                                                        БСГ В25
-                                                    </div>
-                                                    <div class="first-column">
-                                                        <span>4 250 руб.</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide table-slide">
-                                            <div class="price-list__page">
-                                                <div class="price-table__categories">
-                                                    <div class="first-column">
-                                                        Марка
-                                                    </div>
-                                                    <div class="second-column">
-                                                        Наименование
-                                                    </div>
-                                                    <div class="second-column">
-                                                        класс
-                                                    </div>
-                                                    <div class="first-column">
-                                                        Цена за куб. с НДС
+                                                        <span>3 200 руб.</span>
                                                     </div>
                                                 </div>
                                                 <div class="price-table__item">
@@ -579,13 +705,13 @@
                                                         М100
                                                     </div>
                                                     <div class="second-column">
-                                                        Гравий П2-П4 F50 W2
+                                                        Гранит(раствор) В7,5 F50 W4 П4
                                                     </div>
                                                     <div class="second-column">
                                                         БСГ В7,5
                                                     </div>
                                                     <div class="first-column">
-                                                        <span>3 500 руб.</span>
+                                                        <span>2 800 руб.</span>
                                                     </div>
                                                 </div>
                                                 <div class="price-table__item">
@@ -593,13 +719,13 @@
                                                         М150
                                                     </div>
                                                     <div class="second-column">
-                                                        Гравий П2-П4 F50 W2
+                                                        Гранит(раствор) В12,5 F100 W4 П4
                                                     </div>
                                                     <div class="second-column">
                                                         БСГ В12,5
                                                     </div>
                                                     <div class="first-column">
-                                                        <span>3 600 руб.</span>
+                                                        <span>2 880 руб.</span>
                                                     </div>
                                                 </div>
                                                 <div class="price-table__item">
@@ -607,13 +733,13 @@
                                                         М200
                                                     </div>
                                                     <div class="second-column">
-                                                        Гравий П2-П4 F150-F200 W4-W6
+                                                        Гранит(раствор) B15 F150 W4 П4
                                                     </div>
                                                     <div class="second-column">
                                                         БСГ В15
                                                     </div>
                                                     <div class="first-column">
-                                                        <span>3 700 руб.</span>
+                                                        <span>2 960 руб.</span>
                                                     </div>
                                                 </div>
                                                 <div class="price-table__item">
@@ -621,13 +747,13 @@
                                                         М250
                                                     </div>
                                                     <div class="second-column">
-                                                        Гравий П2-П4 F150-F200 W4-W6
+                                                        Гранит(раствор) В20 F150 W4 П4
                                                     </div>
                                                     <div class="second-column">
                                                         БСГ В20
                                                     </div>
                                                     <div class="first-column">
-                                                        <span>3 900 руб.</span>
+                                                        <span>3 120 руб.</span>
                                                     </div>
                                                 </div>
                                                 <div class="price-table__item">
@@ -635,27 +761,83 @@
                                                         М300
                                                     </div>
                                                     <div class="second-column">
-                                                        Гравий П2-П4 F150-F200 W6-W8
+                                                        Гранит(раствор) В22.5 F200 W6 П4
                                                     </div>
                                                     <div class="second-column">
                                                         БСГ В22,5
                                                     </div>
                                                     <div class="first-column">
-                                                        <span>4 000 руб.</span>
+                                                        <span>3 200 руб.</span>
                                                     </div>
                                                 </div>
                                                 <div class="price-table__item">
                                                     <div class="first-column">
-                                                        М350
+                                                        М100
                                                     </div>
                                                     <div class="second-column">
-                                                        Гравий П2-П4 F150-F200 W6-W8
+                                                        Тощий бетон(раствор) В7.5 Ж4 F50 W2
                                                     </div>
                                                     <div class="second-column">
-                                                        БСГ В25
+                                                        БСГ В7,5
                                                     </div>
                                                     <div class="first-column">
-                                                        <span>4 250 руб.</span>
+                                                        <span>2 800 руб.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-table__item">
+                                                    <div class="first-column">
+                                                        М150
+                                                    </div>
+                                                    <div class="second-column">
+                                                        Тощий бетон(раствор) В12.5 Ж4 F75 W4
+                                                    </div>
+                                                    <div class="second-column">
+                                                        БСГ В12,5
+                                                    </div>
+                                                    <div class="first-column">
+                                                        <span>2 880 руб.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-table__item">
+                                                    <div class="first-column">
+                                                        М200
+                                                    </div>
+                                                    <div class="second-column">
+                                                        Тощий бетон(раствор) В15 Ж4 F100 W4
+                                                    </div>
+                                                    <div class="second-column">
+                                                        БСГ В15
+                                                    </div>
+                                                    <div class="first-column">
+                                                        <span>2 960 руб.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-table__item">
+                                                    <div class="first-column">
+                                                        М250
+                                                    </div>
+                                                    <div class="second-column">
+                                                        Тощий бетон(раствор) В20 Ж4 F100 W4
+                                                    </div>
+                                                    <div class="second-column">
+                                                        БСГ В20
+                                                    </div>
+                                                    <div class="first-column">
+                                                        <span>3 120 руб.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-table__item">
+                                                    <div class="first-column">
+
+                                                    </div>
+                                                    <div class="second-column">
+                                                        Цементное молочко
+                                                    </div>
+                                                    <div class="second-column">
+
+                                                    </div>
+                                                    <div class="first-column">
+                                                        <span>5 800 руб.</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -663,164 +845,167 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="price-table__buttons">
-                                <div class="button-main-sale-block button-main-sale-block_color-blue">
-                                    <div class="button-main-sale-block__sale">С бесплатной доставкой</div>
-                                    <button class="button-main button-main_sale button-main_color-blue popup__link" href="#popup">
-                                        <div class="button-main__content">Закажи бетон прямо сейчас</div>
-                                        <div class="button-main__arrow"></div>
-                                    </button>
-                                </div>
+                        </div>
+                        <div class="price-table__buttons">
+                            <div class="button-main-sale-block button-main-sale-block_color-blue">
+                                <div class="button-main-sale-block__sale">С бесплатной доставкой</div>
+                                <button class="button-main button-main_sale button-main_color-blue popup__link" href="#popup">
+                                    <div class="button-main__content">Закажи бетон прямо сейчас</div>
+                                    <div class="button-main__arrow"></div>
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="our-virtues">
-            <div class="our-virtues__title">
-                <p>Нам <span>доверяют</span></p>
-            </div>
-            <div class="our-virtues__item">
-                <div class="dignity1 dignityes">
-                    <div class="dignity-table">
-                        <div class="dignity-triangle">
-                            <img src="images/triangle.svg" alt="">
-                        </div>
-                        <p>Работаем по договору</p>
-                    </div>
-                    <div class="dignity-image">
-                        <img src="images/dignity1.png" alt="">
-                    </div>
-                    <div class="dignity-number">
-                        <img src="images/01.png" alt="">
-                    </div>
-                </div>
-                <div class="dignity2 dignityes">
-                    <div class="dignity-table">
-                        <div class="dignity-triangle">
-                            <img src="images/triangle.svg" alt="">
-                        </div>
-                        <p>Низкие цены</p>
-                    </div>
-                    <div class="dignity-image">
-                        <img src="images/dignity2.png" alt="">
-                    </div>
-                    <div class="dignity-number">
-                        <img src="images/02.png" alt="">
-                    </div>
-                </div>
-                <div class="dignity3 dignityes">
-                    <div class="dignity-table">
-                        <div class="dignity-triangle">
-                            <img src="images/triangle.svg" alt="">
-                        </div>
-                        <p>Сертификаты качества</p>
-                    </div>
-                    <div class="dignity-image">
-                        <img src="images/dignity3.png" alt="">
-                    </div>
-                    <div class="dignity-number">
-                        <img src="images/03.png" alt="">
-                    </div>
-                </div>
-                <div class="dignity4 dignityes">
-                    <div class="dignity-table">
-                        <div class="dignity-triangle">
-                            <img src="images/triangle.svg" alt="">
-                        </div>
-                        <p>Доставка точно в срок</p>
-                    </div>
-                    <div class="dignity-image">
-                        <img src="images/dignity4.png" alt="">
-                    </div>
-                    <div class="dignity-number">
-                        <img src="images/04.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <button class="button-main button-main_sale button-main_color-blue popup__link" href="#popup">
-                <div class="button-main__content">Узнать стоимость</div>
-                <div class="button-main__arrow"></div>
-            </button>
-
+    </div>
+    <div class="our-virtues">
+        <div class="our-virtues__title">
+            <p>Нам <span>доверяют</span></p>
         </div>
-        <div class="laboratory">
-            <div class="laboratory__wrapper">
-                <div class="laboratory__info">
-                    <div class="laboratory__info-title">
-                        <p>Наша собственная <span>аккредитованная лаборатория</span> качества</p>
+        <div class="our-virtues__item">
+            <div class="dignity1 dignityes">
+                <div class="dignity-table">
+                    <div class="dignity-triangle">
+                        <img src="images/triangle.svg" alt="">
                     </div>
-                    <div class="laboratory__info-terms">
-                        <p>Подготовим результат проверки продукции на 8-ые и 28-ые сутки после заливки (по запросу).</p>
-                    </div>
-                    <button class="button-main button-main_sale button-main_color-blue popup__link" href="#popup">
-                        <div class="button-main__content">Заказать прямо сейчас</div>
-                        <div class="button-main__arrow"></div>
-                    </button>
-
-                    <div class="laboratory__adds">
-                        <p>*При условии заказа нашего бетона</p>
-                    </div>
+                    <p>Работаем по договору</p>
                 </div>
-                <div class="laboratory__image">
-                    <img src="images/laboratory-certificate.png" alt="">
+                <div class="dignity-image">
+                    <img src="images/dignity1.png" alt="">
                 </div>
-                <div class="laboratory__stones">
-                    <img src="images/laboratory__stone.png" alt="">
+                <div class="dignity-number">
+                    <img src="images/01.png" alt="">
+                </div>
+            </div>
+            <div class="dignity2 dignityes">
+                <div class="dignity-table">
+                    <div class="dignity-triangle">
+                        <img src="images/triangle.svg" alt="">
+                    </div>
+                    <p>Низкие цены</p>
+                </div>
+                <div class="dignity-image">
+                    <img src="images/dignity2.png" alt="">
+                </div>
+                <div class="dignity-number">
+                    <img src="images/02.png" alt="">
+                </div>
+            </div>
+            <div class="dignity3 dignityes">
+                <div class="dignity-table">
+                    <div class="dignity-triangle">
+                        <img src="images/triangle.svg" alt="">
+                    </div>
+                    <p>Сертификаты качества</p>
+                </div>
+                <div class="dignity-image">
+                    <img src="images/dignity3.png" alt="">
+                </div>
+                <div class="dignity-number">
+                    <img src="images/03.png" alt="">
+                </div>
+            </div>
+            <div class="dignity4 dignityes">
+                <div class="dignity-table">
+                    <div class="dignity-triangle">
+                        <img src="images/triangle.svg" alt="">
+                    </div>
+                    <p>Доставка точно в срок</p>
+                </div>
+                <div class="dignity-image">
+                    <img src="images/dignity4.png" alt="">
+                </div>
+                <div class="dignity-number">
+                    <img src="images/04.png" alt="">
                 </div>
             </div>
         </div>
-        <div class="our-contacts">
-            <div class="our-contacts__title">
-                <p>Наши <span>контакты</span></p>
+        <button class="button-main button-main_sale button-main_color-blue popup__link" href="#popup">
+            <div class="button-main__content">Узнать стоимость</div>
+            <div class="button-main__arrow"></div>
+        </button>
+
+    </div>
+    <div class="laboratory" id="laboratory">
+        <div class="laboratory__wrapper">
+            <div class="laboratory__info">
+                <div class="laboratory__info-title">
+                    <p>Наша собственная <span>аккредитованная лаборатория</span> качества</p>
+                </div>
+                <div class="laboratory__info-terms">
+                    <p>Подготовим результат проверки продукции на 8-ые и 28-ые сутки после заливки (по запросу).</p>
+                </div>
+                <button class="button-main button-main_sale button-main_color-blue popup__link" href="#popup">
+                    <div class="button-main__content">Заказать прямо сейчас</div>
+                    <div class="button-main__arrow"></div>
+                </button>
+
+                <div class="laboratory__adds">
+                    <p>*При условии заказа нашего бетона</p>
+                </div>
             </div>
-            <div class="our-contacts__wrapper">
-                <div class="our-contacts__map">
+            <div class="laboratory__image">
+                <img src="images/laboratory-certificate.png" alt="">
+            </div>
+            <div class="laboratory__stones">
+                <img src="images/laboratory__stone.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="our-contacts" id="our-contacts">
+        <div class="our-contacts__title">
+            <p>Наши <span>контакты</span></p>
+        </div>
+        <div class="our-contacts__wrapper">
+            <div class="our-contacts__map">
+                <div class="iframe__wrapper">
                     <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A673e9bf8b99c1e376defe005198bdb860a8ddf068404ff4a31a0a6214c852b2f&amp;source=constructor" width="100%" height="425" frameborder="0"></iframe>
                 </div>
-                <div class="our-contacts__info">
-                    <div class="info__wrapper">
-                        <div class="info__address">
-                            <div class="address__image">
-                                <img src="images/map-location.png" alt="">
+            </div>
+            <div class="our-contacts__info">
+                <div class="info__wrapper">
+                    <div class="info__address">
+                        <div class="address__image">
+                            <img src="images/map-location.png" alt="">
+                        </div>
+                        <div class="address__content">
+                            <div class="address__content-title">
+                                <p>Адрес завода:</p>
                             </div>
-                            <div class="address__content">
-                                <div class="address__content-title">
-                                    <p>Адрес завода:</p>
-                                </div>
-                                <div class="address__content-text">
-                                    <p>г. Москва, городской округ Истра, Босова 15, вл. 2 </p>
-                                </div>
+                            <div class="address__content-text">
+                                <p>г. Москва, городской округ Истра, Босова 15, вл. 2 </p>
                             </div>
                         </div>
-                        <div class="info__phone">
-                            <div class="phone__image">
-                                <img src="images/social-club.png" alt="">
+                    </div>
+                    <div class="info__phone">
+                        <div class="phone__image">
+                            <img src="images/social-club.png" alt="">
+                        </div>
+                        <div class="phone__content">
+                            <div class="phone__content-title">
+                                <p>Телефон многоканальный: </p>
                             </div>
-                            <div class="phone__content">
-                                <div class="phone__content-title">
-                                    <p>Телефон многоканальный: </p>
+                            <div class="phone__content-text">
+                                <div class="phone-text">
+                                    <p>+7 495 478-12-32 (Диспетчерская)</p>
+                                    <p>+7 495 478-12-32 (Отдел продаж)</p>
                                 </div>
-                                <div class="phone__content-text">
-                                    <div class="phone-text">
-                                        <p>+7 495 478-12-32 (Диспетчерская)</p>
-                                        <p>+7 495 478-12-32 (Отдел продаж)</p>
-                                    </div>
-                                    <div class="mail-text">
-                                        <p>http://Zakaz@завод-бетон-строй.рф/</p>
-                                    </div>
+                                <div class="mail-text">
+                                    <p>http://Zakaz@завод-бетон-строй.рф/</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <button class="button-main button-main_sale button-main_color-orange popup__link" href="#popup">
-                        <div class="button-main__content">Заказать звонок</div>
-                        <div class="button-main__arrow"></div>
-                    </button>
                 </div>
+                <button class="button-main button-main_sale button-main_color-orange popup__link" href="#popup">
+                    <div class="button-main__content">Заказать звонок</div>
+                    <div class="button-main__arrow"></div>
+                </button>
             </div>
         </div>
+    </div>
     </div>
     <div id="popup" class="popup">
         <div class="popup__body">
@@ -887,16 +1072,16 @@
                             </div>
                             <div class="sections-container footer__sections">
                                 <div class="header__sections">
-                                    <a href="#">
+                                    <a href="#calculator">
                                         Калькулятор
                                     </a>
-                                    <a href="#">
+                                    <a href="#our-prices">
                                         Цены
                                     </a>
-                                    <a href="#">
+                                    <a href="#laboratory">
                                         Лаборатория
                                     </a>
-                                    <a href="#">
+                                    <a href="#our-contacts">
                                         Контакты
                                     </a>
                                 </div>

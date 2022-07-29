@@ -48,6 +48,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-bottom: 1px solid #f2f2f2;
 }
 
 .header__button {
@@ -100,6 +101,7 @@ a {
 .sections-container a {
   position: relative;
 }
+
 .sections-container a:after {
   content: "";
   display: block;
@@ -140,7 +142,7 @@ a {
 }
 
 .header__sections a:not(:first-child) {
-  padding-left: 20px;
+  margin-left: 20px;
 }
 
 .contacts {
@@ -189,6 +191,15 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.button a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .call-button {
@@ -200,12 +211,15 @@ a {
   font-style: normal;
   font-weight: 500;
   line-height: 12px;
-  text-align: right;
+  text-align: center;
   text-transform: uppercase;
   color: #ffeed4;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.form__submit a {
+  width: auto;
 }
 
 .button__arrow-img {
@@ -380,7 +394,6 @@ a {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding-top: 80px;
   position: relative;
 }
 
@@ -413,7 +426,7 @@ a {
   align-items: center;
   justify-content: space-between;
   z-index: 80;
-  margin-top: 20px;
+  margin-top: 80px;
   position: relative;
   padding-left: 15px;
   padding-right: 15px;
@@ -533,7 +546,6 @@ a {
   height: 100%;
   z-index: 100;
   position: absolute;
-  top: 40px;
 }
 
 .builder-image img {
@@ -600,6 +612,7 @@ a {
   justify-content: center;
   position: relative;
 }
+
 .price__wrapper {
   width: 100%;
 }
@@ -618,6 +631,7 @@ a {
   padding: 30px 15px;
   z-index: 81;
   position: relative;
+  margin-top: -30px;
 }
 
 @media (min-width: 992px) {
@@ -747,6 +761,7 @@ a {
 .is-scrolled .header {
   background-color: white;
 }
+
 .ellipse {
   display: none;
 }
@@ -767,6 +782,7 @@ a {
   justify-content: center;
   padding: 60px 15px;
 }
+
 @media (min-width: 576px) {
   .our-prices {
     width: 500px;
@@ -807,10 +823,12 @@ a {
   /* overflow-x: auto;
     overflow-y: hidden; */
 }
+
 .material-slider {
   overflow-y: hidden;
   overflow-x: auto;
 }
+
 .price-table span {
   color: #376ac5;
   font-weight: 600;
@@ -886,8 +904,9 @@ a {
   justify-content: center;
   border-bottom: 1px solid transparent;
 }
+
 .material__item:not(:first-child) {
-  padding-left: 20px;
+  margin-left: 20px;
 }
 
 .material__item:hover {
@@ -901,6 +920,9 @@ a {
 
 .price-list__page {
   width: 100%;
+  height: 420px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .price-table__buttons {
@@ -1118,6 +1140,7 @@ a {
   text-align: center;
   padding: 10px 15px;
 }
+
 .our-contacts__title {
   font-family: "Commissioner";
   font-style: normal;
@@ -1127,9 +1150,11 @@ a {
   text-align: center;
   color: #3c3a3b;
 }
+
 .our-contacts__title span {
   color: #376ac5;
 }
+
 .our-contacts__info {
   display: flex;
   flex-direction: column;
@@ -1142,6 +1167,7 @@ a {
   align-items: center;
   justify-content: space-between;
 }
+
 .address__content-title {
   font-family: "Commissioner";
   font-style: normal;
@@ -1150,6 +1176,7 @@ a {
   line-height: 24px;
   color: #929292;
 }
+
 .address__content-text {
   font-family: "Commissioner";
   font-style: normal;
@@ -1158,11 +1185,13 @@ a {
   line-height: 16px;
   color: #3c3a3b;
 }
+
 .info__phone {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .phone__content-title {
   font-family: "Commissioner";
   font-style: normal;
@@ -1170,6 +1199,9 @@ a {
   font-size: 17px;
   line-height: 24px;
   color: #929292;
+}
+.phone-text {
+  margin-left: 0;
 }
 .phone-text p {
   font-family: "Commissioner";
@@ -1179,6 +1211,7 @@ a {
   line-height: 16px;
   color: #3c3a3b;
 }
+
 .mail-text {
   font-family: "Commissioner";
   font-style: normal;
@@ -1187,19 +1220,23 @@ a {
   line-height: 16px;
   color: #3c3a3b;
 }
+
 .info__button {
   width: 120px;
   height: 50px;
 }
+
 .info__button div {
   font-size: 10px;
 }
+
 .info__wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
+
 .popup {
   position: fixed;
   width: 100%;
@@ -1211,13 +1248,16 @@ a {
   opacity: 0;
   visibility: hidden;
 }
+
 .popup.open {
   opacity: 1;
   visibility: visible;
 }
+
 .popup span {
   color: #f1a228;
 }
+
 .popup__body {
   min-height: 100%;
   display: flex;
@@ -1225,6 +1265,7 @@ a {
   justify-content: center;
   padding: 30px 15px;
 }
+
 .popup__content {
   background-color: #fff;
   color: #000000;
@@ -1233,6 +1274,7 @@ a {
   position: relative;
   border-radius: 16px;
 }
+
 .popup__close {
   cursor: pointer;
   position: absolute;
@@ -1244,6 +1286,7 @@ a {
   background-image: url("../images/close.svg");
   background-size: cover;
 }
+
 .popup__title {
   font-family: "Commissioner";
   font-style: normal;
@@ -1253,6 +1296,7 @@ a {
   text-align: center;
   color: #3c3a3b;
 }
+
 .popup__form {
   display: flex;
   flex-direction: column;
@@ -1262,9 +1306,11 @@ a {
 .popup__image {
   display: none;
 }
+
 .form-arrow {
   width: 15px;
 }
+
 .form__name {
   font-family: "Commissioner";
   font-style: normal;
@@ -1273,6 +1319,7 @@ a {
   line-height: 24px;
   color: #3c3a3b;
 }
+
 .form__phone {
   font-family: "Commissioner";
   font-style: normal;
@@ -1281,6 +1328,7 @@ a {
   line-height: 24px;
   color: #3c3a3b;
 }
+
 .form__description {
   font-family: "Commissioner";
   font-style: normal;
@@ -1289,6 +1337,7 @@ a {
   line-height: 22px;
   color: #3c3a3b;
 }
+
 .form__description2 {
   font-family: "Commissioner";
   font-style: italic;
@@ -1297,13 +1346,16 @@ a {
   line-height: 22px;
   color: #929292;
 }
+
 .form-send {
   width: 150px;
   height: 50px;
 }
+
 .form-send div {
   font-size: 12px;
 }
+
 .submit-button {
   width: 100%;
   height: 100%;
@@ -1312,6 +1364,7 @@ a {
   position: absolute;
   cursor: pointer;
 }
+
 .form__submit {
   background: linear-gradient(265.28deg, #fe9c2a 3.85%, #eb5500 93.14%);
   box-shadow: 0px 6px 20px #ffdaaf, inset 0px 0px 4px #ffce94;
@@ -1324,9 +1377,11 @@ a {
   width: 150px;
   height: 50px;
 }
+
 .form__submit div {
   font-size: 12px;
 }
+
 .footer {
   align-items: center;
   justify-content: center;
@@ -1386,6 +1441,7 @@ a {
   .main-info__content {
     text-align: start;
   }
+
   .price {
     background: url(../images/cement-background.png) no-repeat;
     background-size: 100%;
@@ -1437,6 +1493,9 @@ a {
   .cost-button__content {
     font-size: 18px;
   }
+  .phone-text {
+    text-align: left;
+  }
 
   .cost-arrow {
     width: 18px;
@@ -1449,6 +1508,7 @@ a {
     left: 0%;
     margin: 0 0 -80px -80px;
   }
+
   .kamaz img {
     width: 200px;
   }
@@ -1503,6 +1563,33 @@ a {
     font-weight: 600;
     text-transform: uppercase;
     background: #f2f2f2;
+  }
+  .phone__content-text p {
+    font-size: 24px;
+  }
+  .phone__content-title p {
+    font-size: 17px;
+    margin-bottom: 0;
+  }
+  .address__content-title p {
+    font-size: 17px;
+    margin: 0;
+  }
+  .address__content-text {
+    font-size: 20px;
+    margin: 0;
+  }
+  .address__content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 20px;
+  }
+  .phone__content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 20px;
   }
   .price-table__item {
     padding: 20px 50px;
@@ -1620,6 +1707,7 @@ a {
     position: absolute;
     right: 0;
   }
+
   .laboratory__stones img {
     height: 400px;
   }
@@ -1629,56 +1717,77 @@ a {
     padding-bottom: 220px;
     margin-top: -100px;
   }
+
   .our-contacts__wrapper {
     display: flex;
   }
+
   iframe {
     width: 600px;
     height: 400px;
   }
+
   .our-contacts__info {
     padding-left: 50px;
   }
+
   .info__wrapper {
     align-items: start;
+    line-height: 20px;
   }
+
   .info__button {
     font-size: 10px;
     width: 200px;
     height: 50px;
   }
+  .delivery-button img {
+    width: 30px;
+  }
+  .cost-button img {
+    width: 25px;
+  }
+
   .info__button div {
     font-size: 14px;
   }
+
   .our-contacts__title {
     font-size: 52px;
   }
+
   .popup__content {
     position: relative;
   }
+
   .form__name {
     width: 100%;
   }
+
   .form__phone {
     width: 100%;
   }
+
   .popup__content-item {
     width: 60%;
     left: 0;
     display: flex;
     flex-direction: column;
   }
+
   .popup__image {
     display: block;
     position: absolute;
     right: 0;
     bottom: 0;
   }
+
   .popup__image img {
     overflow: hidden;
     width: 300px;
     object-position: bottom right;
   }
+
   .ellipse {
     position: absolute;
     width: 50px;
@@ -1701,13 +1810,20 @@ a {
 
   .footer__wrapper {
     max-width: 1240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .footer__content {
     max-width: 1240px;
     display: flex;
+    padding: 40px 0 0 20px;
   }
 
+  .footer__contacts {
+    margin-top: 30px;
+  }
   .footer__container {
     display: flex;
     align-items: center;
@@ -1745,7 +1861,7 @@ a {
   }
 
   .footer__sections a {
-    padding: 0 40px 0 40px;
+    margin: 0 40px 0 40px;
   }
 }
 
@@ -1753,9 +1869,11 @@ a {
   .footer__kamaz img {
     width: 400px;
   }
+
   .footer__kamaz {
     margin-top: -150px;
   }
+
   .our-virtues__item {
     display: flex;
     align-items: center;
@@ -1763,6 +1881,7 @@ a {
     width: 100%;
     max-width: 1240px;
   }
+
   .dignity2 {
     margin-bottom: -60px;
   }
@@ -1770,10 +1889,12 @@ a {
   .dignity4 {
     margin-bottom: -60px;
   }
+
   .laboratory__stones img {
     height: 700px;
   }
 }
+
 @media (min-width: 1450px) {
   .kamaz {
     display: block;
@@ -1782,6 +1903,7 @@ a {
     left: 0%;
     margin: 0 0 -150px -150px;
   }
+
   .kamaz img {
     width: 400px;
   }
@@ -2093,4 +2215,13 @@ a {
     bottom: 0;
     right: 0;
   }
+}
+.iframe__wrapper {
+  background: #ffffff;
+  box-shadow: 0px 4px 20px #ededed;
+  border-radius: 16px;
+  padding: 10px;
+}
+.iframe__wrapper iframe {
+  border-radius: 16px;
 }
