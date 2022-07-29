@@ -860,7 +860,7 @@
                     <div class="popup__title">
                         <p>Заказать <span>звонок</span></p>
                     </div>
-                    <form action="scripts/script.php" method="post" class="popup__form">
+                    <form action="scripts/script.php" method="post" class="popup__form" id="message-form">
                         <div class="form__name">
                             <div class="form__name-title">
                                 <p>Ваше имя<span>*</span></p>
@@ -888,6 +888,7 @@
                         <div class="form__description2">
                             <p>Нажимая на кнопку, Вы даёте согласие на использование своих персональных данных.</p>
                         </div>
+                        <div class="form__message"></div>
                     </form>
                 </div>
                 <div class="popup__image">
@@ -939,7 +940,6 @@
             </div>
         </div>
     </footer>
-    <?php include_once("scripts/script.php"); ?>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="scripts/script.js"></script>
 </body>

@@ -45,9 +45,9 @@ const lockPadding = document.querySelectorAll('.lock-padding');
 let unlock = true;
 const timeout = 600;
 
-for (let index = 0; index < popupLinks.length; index++){
+for (let index = 0; index < popupLinks.length; index++) {
     const popupLink = popupLinks[index];
-    popupLink.addEventListener("click", function(e){
+    popupLink.addEventListener("click", function (e) {
         const popupName = popupLink.getAttribute('href').replace('#', '');
         const curentPopup = document.getElementById(popupName);
         popupOpen(curentPopup);
@@ -56,8 +56,8 @@ for (let index = 0; index < popupLinks.length; index++){
 }
 
 const popupCloseIcon = document.querySelectorAll('.close-popup');
-if(popupCloseIcon.length > 0){
-    for (let index = 0; index < popupCloseIcon.length; index++){
+if (popupCloseIcon.length > 0) {
+    for (let index = 0; index < popupCloseIcon.length; index++) {
         const el = popupCloseIcon[index];
         el.addEventListener('click', function (e) {
             popupClose(el.closest('.popup'));
@@ -66,17 +66,47 @@ if(popupCloseIcon.length > 0){
     }
 }
 
-function popupOpen(curentPopup){
-    if(curentPopup && unlock){
+function popupOpen(curentPopup) {
+    if (curentPopup && unlock) {
         const popupActive = document.querySelector('.popup.open');
-        if(popupActive){
+        if (popupActive) {
             popupClose(popupActive, false);
         }
         curentPopup.classList.add('open');
-        curentPopup.addEventListener('click', function (e){
-            if(!e.target.closest('.popup__content')){
+        curentPopup.addEventListener('click', function (e) {
+            if (!e.target.closest('.popup__content')) {
                 popupClose(e.target.closest('.popup'));
             }
         })
     }
+}
+
+const form = document.getElementById('message-form');
+if (form) {
+    const formMessageBlock = form.querySelector('.form__message');
+    form.addEventListener('submit', (event) => {
+        formMessageBlock.innerHTML = '';
+        const formData = new FormData(form);
+        event.preventDefault();
+        fetch('./scripts/script.php', {
+            'method': 'POST',
+            body: formData,
+        })
+            .then((response) => response.json())
+            .then((data) => {
+                console.log(data);
+
+                let alertBlock = document.createElement('div');
+                alertBlock.classList.add('alert');
+
+                if (data.success) {
+                    form.querySelectorAll('input').forEach(element => element.value = '');
+                    alertBlock.classList.add('alert_success');
+                } else {
+                    alertBlock.classList.add('alert_danger');
+                }
+                alertBlock.innerHTML = data.message;
+                formMessageBlock.append(alertBlock);
+            });
+    })
 }
