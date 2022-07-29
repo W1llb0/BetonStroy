@@ -9,970 +9,972 @@ fhd: 1920px,
 qhd: 2560px, */
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-width: 320px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+}
+
+body.locked {
+  overflow: hidden;
 }
 
 a {
-    text-decoration: none;
-    color: #000000;
+  text-decoration: none;
+  color: #000000;
 }
 
 .body-content {
-    width: 100%;
+  width: 100%;
 }
 
 .header {
-    position: fixed;
-    z-index: 100;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
-    width: 1240px;
-    padding: 10px 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  width: 1240px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .logo a {
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 32px;
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .logo-blue {
-    text-transform: uppercase;
-    color: #376AC5;
+  text-transform: uppercase;
+  color: #376ac5;
 }
 
 .logo-yellow {
-    text-transform: uppercase;
-    color: #F1A228;
+  text-transform: uppercase;
+  color: #f1a228;
 }
 
 .sections-container {
-    display: none;
+  display: none;
 }
 
 .sections-container a {
-    position: relative;
+  position: relative;
 }
 .sections-container a:after {
-	content: "";
-    display: block;
-    position: absolute;
-    right: 0;
-    bottom: -3px;
-    width: 0;
-    height: 2px;
-    background-color: #F1A228; 
-    transition: width 0.5s;
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #f1a228;
+  transition: width 0.5s;
 }
 
 .sections-container a:hover:after {
-	content: "";
-    width: 100%;
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: -3px;
-    height: 2px;
-    background-color: #0d2f69;
-    transition: width 0.5s; 
+  content: "";
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px;
+  background-color: #0d2f69;
+  transition: width 0.5s;
 }
 
 .header__sections {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header__sections a {
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 24px;
-    color: #929292;
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  color: #929292;
 }
 
 .header__sections a:not(:first-child) {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
 .contacts {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contacts__info {
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin-right: 15px;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-right: 15px;
 }
 
 .contacts__phone {
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    color: #3C3A3B;
-    margin-left: auto;
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #3c3a3b;
+  margin-left: auto;
 }
 
 .contacts__mail {
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 24px;
-    text-align: right;
-    color: #929292;
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: right;
+  color: #929292;
 }
 
 .button {
-    width: 95px;
-    height: 22px;
-    background: linear-gradient(265.28deg, #FE9C2A 3.85%, #EB5500 93.14%);
-    box-shadow: 0px 1px 10px #FFDAAF, inset 0px 0px 4px #FFCE94;
-    border: none;
-    border-radius: 6px;
-    position: relative;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 95px;
+  height: 22px;
+  background: linear-gradient(265.28deg, #fe9c2a 3.85%, #eb5500 93.14%);
+  box-shadow: 0px 1px 10px #ffdaaf, inset 0px 0px 4px #ffce94;
+  border: none;
+  border-radius: 6px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .call-button {
-    font-size: 8px;
+  font-size: 8px;
 }
 
 .button__content {
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 500;
-    line-height: 12px;
-    text-align: right;
-    text-transform: uppercase;
-    color: #FFEED4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 12px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #ffeed4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button__arrow-img {
-    position: absolute;
-    right: 0;
-    top: 1px;
-    width: 10px;
+  position: absolute;
+  right: 0;
+  top: 1px;
+  width: 10px;
 }
 
 .burger {
-    border: 1px solid gray;
-    padding: 5px 8px 5px 8px;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    background: rgb(233, 232, 232);
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s ease;
-    margin-left: 10px;
+  border: 1px solid gray;
+  padding: 5px 8px 5px 8px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: rgb(233, 232, 232);
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+  margin-left: 10px;
 }
 
 .burger.active {
-    position: relative;
-    transition: transform 0.3s ease;
+  position: relative;
+  transition: transform 0.3s ease;
 }
 
 .burger.active div:first-child {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 .burger.active div {
-    position: absolute;
-    transform: rotate(-50deg);
-    margin: 0;
-    padding: 0;
-    top: 10px;
-    transition: transform 0.3s ease;
+  position: absolute;
+  transform: rotate(-50deg);
+  margin: 0;
+  padding: 0;
+  top: 10px;
+  transition: transform 0.3s ease;
 }
 
 .burger.active div:last-child {
-    transform: rotate(50deg);
+  transform: rotate(50deg);
 }
 
 .burger div {
-    width: 12px;
-    height: 3px;
-    background-color: #376AC5;
-    border-radius: 2px;
-    transition: transform 0.3s ease;
-    margin: auto;
+  width: 12px;
+  height: 3px;
+  background-color: #376ac5;
+  border-radius: 2px;
+  transition: transform 0.3s ease;
+  margin: auto;
 }
 
 .burger div:not(:first-child) {
-    margin-top: 3px;
+  margin-top: 3px;
 }
 
 .menu {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(233, 232, 232);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 90;
-    padding-top: 40px;
-    transform: translateY(-100%);
-    transition: transform 0.3s ease;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(233, 232, 232);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  padding-top: 40px;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
 }
 
 .menu.active {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
 .menu__content {
-    padding: 30px 15px;
+  padding: 30px 15px;
 }
 
 .menu__sections {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .menu__sections a {
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 50px;
-    color: #fff;
-    border: 1px solid #376AC5;
-    width: 150px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    background-color: #376AC5;
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 50px;
+  color: #fff;
+  border: 1px solid #376ac5;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #376ac5;
 }
 
 .menu__sections a:not(:first-child) {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
-@media(min-width: 768px) {
-    .button {
-        width: 130px;
-        height: 40px;
-    }
+@media (min-width: 768px) {
+  .button {
+    width: 130px;
+    height: 40px;
+  }
 
-    .burger {
-        width: 40px;
-        height: 40px;
-        padding: 5px 8px 5px 8px;
-        margin-left: 10px;
-    }
+  .burger {
+    width: 40px;
+    height: 40px;
+    padding: 5px 8px 5px 8px;
+    margin-left: 10px;
+  }
 
-    .burger div {
-        margin: auto;
-    }
+  .burger div {
+    margin: auto;
+  }
 
-    .burger.active div {
-        margin-left: 5px;
-        margin-top: 7px;
-    }
+  .burger.active div {
+    margin-left: 5px;
+    margin-top: 7px;
+  }
 }
 
-@media(min-width: 992px) {
-    .sections-container {
-        display: block;
-    }
+@media (min-width: 992px) {
+  .sections-container {
+    display: block;
+  }
 
-    .burger,
-    .menu {
-        display: none;
-    }
+  .burger,
+  .menu {
+    display: none;
+  }
 
-    .logo a {
-        font-size: 26px;
-    }
+  .logo a {
+    font-size: 26px;
+  }
 
-    .button {
-        width: 180px;
-        height: 50px;
-    }
+  .button {
+    width: 180px;
+    height: 50px;
+  }
 
-    .call-button {
-        font-size: 14px;
-    }
+  .call-button {
+    font-size: 14px;
+  }
 
-    .button__arrow-img {
-        width: 20px;
-    }
+  .button__arrow-img {
+    width: 20px;
+  }
 
-    .contacts__info {
-        display: flex;
-    }
+  .contacts__info {
+    display: flex;
+  }
 
-    .header {
-        background-color: transparent;
-    }
+  .header {
+    background-color: transparent;
+  }
 }
 
 .main-info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding-top: 80px;
-    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 80px;
+  position: relative;
 }
 
 .main-info__background {
-    left: 0;
-    position: absolute;
-    z-index: 20;
-    width: 100%;
-    height: 100%;
-    display: none;
+  left: 0;
+  position: absolute;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  display: none;
 }
 
 .main-info__background img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .splash-stones {
-    position: absolute;
-    left: 0;
-    z-index: 30;
-    margin-top: 20px;
-    display: none;
+  position: absolute;
+  left: 0;
+  z-index: 30;
+  margin-top: 20px;
+  display: none;
 }
 
 .main-info__content {
-    max-width: 1240px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 80;
-    margin-top: 20px;
-    position: relative;
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: center;
+  max-width: 1240px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 80;
+  margin-top: 20px;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
 }
 
 .about-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  left: 0;
 }
 
 .about-info__main p {
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 40px;
-    color: #3C3A3B;
-    left: 0;
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 40px;
+  color: #3c3a3b;
+  left: 0;
 }
 
 .about-info__main span {
-    color: #376AC5;
+  color: #376ac5;
 }
 
 .about-info__discription {
-    font-family: 'Commissioner';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    color: #3C3A3B;
+  font-family: "Commissioner";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #3c3a3b;
 }
 
 .delivery-button {
-    width: 180px;
-    height: 45px;
-    background: linear-gradient(265.28deg, #376AC5 3.85%, #5F98FF 93.14%);
-    box-shadow: 0px 6px 20px #B0CCFF, inset 0px 0px 4px #C6DAFF;
-    border-radius: 6px;
+  width: 180px;
+  height: 45px;
+  background: linear-gradient(265.28deg, #376ac5 3.85%, #5f98ff 93.14%);
+  box-shadow: 0px 6px 20px #b0ccff, inset 0px 0px 4px #c6daff;
+  border-radius: 6px;
 }
 
 .delivery-button__content {
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 24px;
-    text-transform: uppercase;
-    color: #DEEAFF;
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #deeaff;
 }
 
 .dignity {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex: 0 0 auto;
-    width: 60%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 0 0 auto;
+  width: 60%;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .dignity__item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .dignity__cement {
-    margin-left: -10px;
+  margin-left: -10px;
 }
 
 .dignity__images {
-    position: relative;
+  position: relative;
 }
 
 .star {
-    position: absolute;
-    right: 0;
-    margin-top: -25px;
-    margin-right: -20px;
+  position: absolute;
+  right: 0;
+  margin-top: -25px;
+  margin-right: -20px;
 }
 
 .dignity__content {
-    margin-left: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Commissioner';
-    font-style: italic;
-    font-weight: 600;
-    font-size: 17px;
-    line-height: 24px;
-    color: #3C3A3B;
-    width: 140px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Commissioner";
+  font-style: italic;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 24px;
+  color: #3c3a3b;
+  width: 140px;
 }
 
 .dignity__content span {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .builder {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
-    height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 100%;
 }
 
 .builder-image {
-    display: flex;
-    align-items: flex-start;
-    height: 100%;
-    z-index: 100;
-    position: absolute;
-    top: 40px;
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+  z-index: 100;
+  position: absolute;
+  top: 40px;
 }
 
 .builder-image img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
-@media(min-width: 992px) {
-    .splash-stones {
-        display: block;
-    }
+@media (min-width: 992px) {
+  .splash-stones {
+    display: block;
+  }
 
-    .main-info__background {
-        display: block;
-    }
+  .main-info__background {
+    display: block;
+  }
 
-    .builder {
-        display: flex;
-    }
+  .builder {
+    display: flex;
+  }
 
-    .about-info {
-        width: 60%;
-        display: block;
-    }
+  .about-info {
+    width: 60%;
+    display: block;
+  }
 
-    .dignity {
-        flex-direction: row;
-        align-items: center;
-    }
+  .dignity {
+    flex-direction: row;
+    align-items: center;
+  }
 
-    .about-info__main p {
-        font-family: 'Commissioner';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 46px;
-        line-height: 68px;
-        color: #3C3A3B;
-        left: 0;
-    }
+  .about-info__main p {
+    font-family: "Commissioner";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 68px;
+    color: #3c3a3b;
+    left: 0;
+  }
 
+  .delivery-button {
+    width: 309px;
+    height: 80px;
+    background: linear-gradient(265.28deg, #376ac5 3.85%, #5f98ff 93.14%);
+    box-shadow: 0px 6px 20px #b0ccff, inset 0px 0px 4px #c6daff;
+    border-radius: 6px;
+  }
 
-    .delivery-button {
-        width: 309px;
-        height: 80px;
-        background: linear-gradient(265.28deg, #376AC5 3.85%, #5F98FF 93.14%);
-        box-shadow: 0px 6px 20px #B0CCFF, inset 0px 0px 4px #C6DAFF;
-        border-radius: 6px;
-    }
-
-    .delivery-button__content {
-        font-family: 'Commissioner';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 17px;
-        line-height: 24px;
-        text-transform: uppercase;
-        color: #DEEAFF;
-    }
+  .delivery-button__content {
+    font-family: "Commissioner";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #deeaff;
+  }
 }
 
 .price {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
 }
 .price__wrapper {
-    width: 100%;
+  width: 100%;
 }
 
 .stones-back {
-    position: absolute;
-    right: 0;
-    top: 500px;
-    display: none;
+  position: absolute;
+  right: 0;
+  top: 500px;
+  display: none;
 }
 
 .calculator {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 20px #EDEDED;
-    border-radius: 16px;
-    padding: 30px 15px;
-    z-index: 81;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background: #ffffff;
+  box-shadow: 0px 4px 20px #ededed;
+  border-radius: 16px;
+  padding: 30px 15px;
+  z-index: 81;
+  position: relative;
 }
 
 .kamaz {
-    display: none;
+  display: none;
 }
 
 .calculator span {
-    color: #F1A228;
+  color: #f1a228;
 }
 
 .calculator__title {
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 40px;
-    text-align: center;
-    color: #3C3A3B;
-    width: 100%;
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 40px;
+  text-align: center;
+  color: #3c3a3b;
+  width: 100%;
 }
 
 .calculator__title span {
-    color: #376AC5;
+  color: #376ac5;
 }
 
 .concrete-type {
-    width: 100%;
+  width: 100%;
 }
 
 .concrete-type__input select {
-    width: 100%;
-    height: 50px;
+  width: 100%;
+  height: 50px;
 }
 
 .input-title {
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 24px;
-    color: #3C3A3B;
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  color: #3c3a3b;
 }
 
 .necessarily p {
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .agreement p {
-    font-family: 'Commissioner';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    text-align: center;
-    color: #929292;
+  font-family: "Commissioner";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #929292;
 }
 
 .volume {
-    width: 100%;
+  width: 100%;
 }
 
 .phone {
-    width: 100%;
+  width: 100%;
 }
 
 input,
 select {
-    background-color: #DFDFDF;
-    outline: none;
-    padding: .6em 1.4em .5em .8em;
-    width: 100%;
+  background-color: #dfdfdf;
+  outline: none;
+  padding: 0.6em 1.4em 0.5em 0.8em;
+  width: 100%;
 }
 
 select:focus {
-    border-color: #376AC5;
-    background: #FFFFFF;
+  border-color: #376ac5;
+  background: #ffffff;
 }
 .calculator__inputs {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .calculator input:focus {
-    border: none;
-    border-color: #376AC5;
-    border: 1px solid #376AC5;
-    background: #FFFFFF;
+  border: none;
+  border-color: #376ac5;
+  border: 1px solid #376ac5;
+  background: #ffffff;
 }
 
 input::placeholder,
 select {
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 24px;
-    color: #929292;
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  color: #929292;
 }
 
 .address {
-    width: 100%;
+  width: 100%;
 }
 
 .calculator input {
-    width: 100%;
-    height: 50px;
-    border: none;
-    border: 1px solid #929292;
-    border-radius: 6px;
+  width: 100%;
+  height: 50px;
+  border: none;
+  border: 1px solid #929292;
+  border-radius: 6px;
 }
 
 .cost-button {
-    background: linear-gradient(265.28deg, #376AC5 3.85%, #5F98FF 93.14%);
-    box-shadow: 0px 6px 20px #B0CCFF, inset 0px 0px 4px #C6DAFF;
-    border-radius: 6px;
-    width: 150px;
-    height: 50px;
+  background: linear-gradient(265.28deg, #376ac5 3.85%, #5f98ff 93.14%);
+  box-shadow: 0px 6px 20px #b0ccff, inset 0px 0px 4px #c6daff;
+  border-radius: 6px;
+  width: 150px;
+  height: 50px;
 }
 
 .cost-button {
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 24px;
-    text-transform: uppercase;
-    color: #DEEAFF;
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #deeaff;
 }
 
 .calculator-conventions {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .select {
-    display: block;
-    font-size: 16px;
-    font-family: sans-serif;
-    font-weight: 700;
-    color: #444;
-    line-height: 1.3;
-    padding: .6em 1.4em .5em .8em;
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-    margin: 0;
-    border-radius: 6px;
-    background-image: url('../images/arrow-bot.svg');
-    background-repeat: no-repeat, repeat;
-    background-position: right .7em top 50%, 0 0;
-    background-size: .65em auto, 100%;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 24px;
-    color: #929292;
-    border: none;
-    border: 1px solid #929292;
+  display: block;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: #444;
+  line-height: 1.3;
+  padding: 0.6em 1.4em 0.5em 0.8em;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  border-radius: 6px;
+  background-image: url("../images/arrow-bot.svg");
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  background-size: 0.65em auto, 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  color: #929292;
+  border: none;
+  border: 1px solid #929292;
 }
 
 .disabled-option {
-    display: none;
+  display: none;
 }
 
 .is-scrolled .header {
-    background-color: white;
+  background-color: white;
 }
-.ellipse{
-    display: none;
+.ellipse {
+  display: none;
 }
 
 .price-list {
-    min-width: 320px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  min-width: 320px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .our-prices {
-    width: 320px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 60px 15px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 15px;
 }
-@media(min-width: 576px){
-    .our-prices{
-        width: 500px;
-    }
+@media (min-width: 576px) {
+  .our-prices {
+    width: 500px;
+  }
 }
 
 .our-prices__title {
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 52px;
-    text-align: center;
-    color: #3C3A3B;
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #3c3a3b;
 }
 
 .our-prices__title span {
-    color: #376AC5;
+  color: #376ac5;
 }
 
 .price-table {
-    z-index: 81;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 20px #EDEDED;
-    border-radius: 16px;
-    width: 80%;
-    max-width: 1040px;
-    /* display: flex;
+  z-index: 81;
+  background: #ffffff;
+  box-shadow: 0px 4px 20px #ededed;
+  border-radius: 16px;
+  width: 80%;
+  max-width: 1040px;
+  /* display: flex;
     flex-direction: column;
     align-items: center; */
-    justify-content: center;
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #3C3A3B;
-    /* overflow-x: auto;
+  justify-content: center;
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3c3a3b;
+  /* overflow-x: auto;
     overflow-y: hidden; */
 }
-.material-slider{
-    overflow-y: hidden;
-    overflow-x: auto;
+.material-slider {
+  overflow-y: hidden;
+  overflow-x: auto;
 }
 .price-table span {
-    color: #376AC5;
-    font-weight: 600;
+  color: #376ac5;
+  font-weight: 600;
 }
 
 .price-table__categories {
-    padding: 10px 30px;
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    font-weight: 600;
-    text-transform: uppercase;
-    background: #F2F2F2;
+  padding: 10px 30px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: #f2f2f2;
 }
 
 .price-table__item {
-    padding: 20px 30px;
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    border-bottom: 1px solid #E9E9E9;
+  padding: 20px 30px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1px solid #e9e9e9;
 }
 
 .first-column {
-    width: 80px;
+  width: 80px;
 }
 
 .second-column {
-    width: 200px;
+  width: 200px;
 }
 
 .price-table__categories,
 .price-table__item {
-    height: 70px;
-    align-items: center;
+  height: 70px;
+  align-items: center;
 }
 
 .swiper {
-    width: 800px;
+  width: 800px;
 }
 
 .material {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 800px;
-    padding: 20px 100px;
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 28px;
-    color: #3C3A3B;
-    overflow: hidden;
-    overflow-x: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+  padding: 20px 100px;
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #3c3a3b;
+  overflow: hidden;
+  overflow-x: auto;
 }
 
 .material img {
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50%;
-    margin-bottom: 50%;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50%;
+  margin-bottom: 50%;
 }
 
 .material__item {
-    display: flex;
-    flex: 0 0 20%;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 1px solid transparent;
+  display: flex;
+  flex: 0 0 20%;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid transparent;
 }
-.material__item:not(:first-child){
-    padding-left: 20px;
+.material__item:not(:first-child) {
+  padding-left: 20px;
 }
 
 .material__item:hover {
-    border-bottom: 1px solid #376AC5;
-    color: #376AC5;
+  border-bottom: 1px solid #376ac5;
+  color: #376ac5;
 }
 
 .material p {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 
 .price-list__page {
-    width: 100%;
+  width: 100%;
 }
 
 .price-table__buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 0 50px 0;
-    position: absolute;
-    right: 15%;
-    left: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0 50px 0;
+  position: absolute;
+  right: 15%;
+  left: 15%;
 }
 
 .make-offer-button {
-    width: 200px;
-    height: 50px;
-    font-size: 11px;
-    background: linear-gradient(265.28deg, #376AC5 3.85%, #5F98FF 93.14%);
-    box-shadow: 0px 6px 20px #B0CCFF, inset 0px 0px 4px #C6DAFF;
-    border-radius: 6px;
-    position: relative;
+  width: 200px;
+  height: 50px;
+  font-size: 11px;
+  background: linear-gradient(265.28deg, #376ac5 3.85%, #5f98ff 93.14%);
+  box-shadow: 0px 6px 20px #b0ccff, inset 0px 0px 4px #c6daff;
+  border-radius: 6px;
+  position: relative;
 }
 
 .stock-button {
-    position: absolute;
-    font-size: 12px;
-    top: 0;
-    margin-top: -30px;
-    height: 40px;
-    transform: rotate(5deg);
-    box-shadow: none;
-    border: 2px solid #FFFFFF;
-    display: none;
+  position: absolute;
+  font-size: 12px;
+  top: 0;
+  margin-top: -30px;
+  height: 40px;
+  transform: rotate(5deg);
+  box-shadow: none;
+  border: 2px solid #ffffff;
+  display: none;
 }
 
 /* .table-slide{
@@ -985,857 +987,875 @@ select {
 } */
 
 .our-virtues {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 80px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  width: 100%;
 }
 
 .our-virtues__title {
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 50px;
-    color: #3C3A3B;
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 50px;
+  color: #3c3a3b;
 }
 
 .our-virtues__title span {
-    color: #376AC5;
+  color: #376ac5;
 }
 
 .dignityes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
 }
 
 .dignity-table {
-    width: 140px;
-    height: 60px;
-    background-color: #F1A228;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    color: #FFFFFF;
-    margin-bottom: -20px;
-    position: relative;
-    z-index: 20;
+  width: 140px;
+  height: 60px;
+  background-color: #f1a228;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  margin-bottom: -20px;
+  position: relative;
+  z-index: 20;
 }
 
 .dignity-table p {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 
 .dignity-table img {
-    height: 15px;
-    display: flex;
-    align-items: flex-start;
+  height: 15px;
+  display: flex;
+  align-items: flex-start;
 }
 
 .dignity-image img {
-    width: 200px;
-    border-radius: 16px;
-    position: relative;
-    z-index: 10;
+  width: 200px;
+  border-radius: 16px;
+  position: relative;
+  z-index: 10;
 }
 
 .dignity-number {
-    color: #376AC5;
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 14px;
-    line-height: 16px;
-    -webkit-text-stroke: .07em #FFFFFF;
-    z-index: 30;
-    margin-left: 80%;
-    margin-top: -20px;
+  color: #376ac5;
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 16px;
+  -webkit-text-stroke: 0.07em #ffffff;
+  z-index: 30;
+  margin-left: 80%;
+  margin-top: -20px;
 }
 
 .dignity-number img {
-    width: 30px;
+  width: 30px;
 }
 
 .virtues-button {
-    background: linear-gradient(265.28deg, #376AC5 3.85%, #5F98FF 93.14%);
-    box-shadow: 0px 6px 20px #B0CCFF, inset 0px 0px 4px #C6DAFF;
-    border-radius: 6px;
-    width: 150px;
-    height: 40px;
-    font-size: 12px;
+  background: linear-gradient(265.28deg, #376ac5 3.85%, #5f98ff 93.14%);
+  box-shadow: 0px 6px 20px #b0ccff, inset 0px 0px 4px #c6daff;
+  border-radius: 6px;
+  width: 150px;
+  height: 40px;
+  font-size: 12px;
 }
 
 .laboratory {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .laboratory__wrapper {
-    width: 100%;
-    max-width: 1240px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  max-width: 1240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .laboratory__info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
 }
 
 .laboratory__info-title {
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 26px;
-    color: #3C3A3B;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 26px;
+  color: #3c3a3b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .laboratory__info-title span {
-    color: #376AC5;
+  color: #376ac5;
 }
 
 .laboratory__info-terms {
-    font-family: 'Commissioner';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    color: #3C3A3B;
-    text-align: center;
+  font-family: "Commissioner";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #3c3a3b;
+  text-align: center;
 }
 
 .laboratory__button {
-    width: 200px;
-    height: 50px;
-    font-size: 11px;
-    background: linear-gradient(265.28deg, #376AC5 3.85%, #5F98FF 93.14%);
-    box-shadow: 0px 6px 20px #b0ccff, inset 0px 0px 4px #c6daff;
-    border-radius: 6px;
+  width: 200px;
+  height: 50px;
+  font-size: 11px;
+  background: linear-gradient(265.28deg, #376ac5 3.85%, #5f98ff 93.14%);
+  box-shadow: 0px 6px 20px #b0ccff, inset 0px 0px 4px #c6daff;
+  border-radius: 6px;
 }
 
 .laboratory__adds {
-    font-family: 'Commissioner';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;
-    color: #929292;
+  font-family: "Commissioner";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #929292;
 }
 
 .laboratory__stones {
-    display: none;
+  display: none;
 }
 
 .laboratory__image {
-    display: none;
+  display: none;
 }
 
-.our-contacts{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 10px 15px;
+.our-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 15px;
 }
-.our-contacts__title{
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 36px;
-    text-align: center;
-    color: #3C3A3B;
+.our-contacts__title {
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  color: #3c3a3b;
 }
-.our-contacts__title span{
-    color: #376AC5;
+.our-contacts__title span {
+  color: #376ac5;
 }
-.our-contacts__info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.our-contacts__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.info__address{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.info__address {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.address__content-title{
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 24px;
-    color: #929292;
+.address__content-title {
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  color: #929292;
 }
-.address__content-text{
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 16px;
-    color: #3C3A3B;
+.address__content-text {
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #3c3a3b;
 }
-.info__phone{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.info__phone {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.phone__content-title{
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 24px;
-    color: #929292;    
+.phone__content-title {
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  color: #929292;
 }
-.phone-text p{
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 16px;
-    color: #3C3A3B;
+.phone-text p {
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  color: #3c3a3b;
 }
-.mail-text{
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 16px;
-    color: #3C3A3B;
+.mail-text {
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #3c3a3b;
 }
-.info__button{
-    width: 120px;
-    height: 50px;
+.info__button {
+  width: 120px;
+  height: 50px;
 }
-.info__button div{
-    font-size: 10px;
+.info__button div {
+  font-size: 10px;
 }
-.info__wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.info__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-.popup{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    top: 0;
-    left: 0;
-    z-index: 100;
-    opacity: 0;
-    visibility: hidden;
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
 }
-.popup.open{
-    opacity: 1;
-    visibility: visible;
+.popup.open {
+  opacity: 1;
+  visibility: visible;
 }
-.popup span{
-    color: #F1A228;
+.popup span {
+  color: #f1a228;
 }
-.popup__body{
-    min-height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px 15px;
+.popup__body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 15px;
 }
-.popup__content{
-    background-color: #fff;
-    color: #000000;
-    max-width: 800px;
-    padding: 30px;
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border-radius: 16px;
+.popup__content {
+  background-color: #fff;
+  color: #000000;
+  max-width: 800px;
+  padding: 30px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 16px;
 }
-.popup__close{
-    position: absolute;
-    right: 15px;
-    top: 15px;
+.popup__close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
 }
-.popup__title{
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 32px;
-    text-align: center;
-    color: #3C3A3B; 
+.popup__title {
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+  color: #3c3a3b;
 }
-.popup__form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.popup__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.popup input{
-    border: none;
-    background: #F2F2F2;
-    box-shadow: inset 0px 0px 4px #DFDFDF;
-    border-radius: 6px;
+.popup input {
+  border: none;
+  background: #f2f2f2;
+  box-shadow: inset 0px 0px 4px #dfdfdf;
+  border-radius: 6px;
 }
-.popup__image{
-    display: none;
+.popup__image {
+  display: none;
 }
-.form-arrow{
-    width: 15px;
+.form-arrow {
+  width: 15px;
 }
-.form__name{
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 24px;
-    color: #3C3A3B;
+.form__name {
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  color: #3c3a3b;
 }
-.form__phone{
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 24px;
-    color: #3C3A3B;
+.form__phone {
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  color: #3c3a3b;
 }
-.form__description{
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    color: #3C3A3B;
+.form__description {
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #3c3a3b;
 }
-.form__description2{
-    font-family: 'Commissioner';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
-    color: #929292;    
+.form__description2 {
+  font-family: "Commissioner";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #929292;
 }
-.form-send{
-    width: 150px;
-    height: 50px;
+.form-send {
+  width: 150px;
+  height: 50px;
 }
-.form-send div{
-    font-size: 12px;
+.form-send div {
+  font-size: 12px;
 }
-.submit-button{
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    opacity: 0;
-    position: absolute;
-    cursor: pointer;
+.submit-button {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
 }
-.form__submit{
-    background: linear-gradient(265.28deg, #FE9C2A 3.85%, #EB5500 93.14%);
-    box-shadow: 0px 6px 20px #FFDAAF, inset 0px 0px 4px #FFCE94;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    width: 150px;
-    height: 50px;
+.form__submit {
+  background: linear-gradient(265.28deg, #fe9c2a 3.85%, #eb5500 93.14%);
+  box-shadow: 0px 6px 20px #ffdaaf, inset 0px 0px 4px #ffce94;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  width: 150px;
+  height: 50px;
 }
-.form__submit div{
-    font-size: 12px;
+.form__submit div {
+  font-size: 12px;
 }
 .footer {
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer__background {
-    background: #376AC5;
-    opacity: 0.95;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background: #376ac5;
+  opacity: 0.95;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer__wrapper {
-    width: 100%;
-    max-width: 320px;
+  width: 100%;
+  max-width: 320px;
 }
 
 .footer__content {
-    width: 100%;
-    max-width: 320px;
+  width: 100%;
+  max-width: 320px;
 }
 
 .footer__container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
 }
 
 .footer__logo a {
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer__contacts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+.footer__contacts a {
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #9ebdf4;
+}
+
+.footer__kamaz {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .main-info__content {
+    text-align: start;
+  }
+  .price {
+    background: url(../images/cement-background.png) no-repeat;
+    background-size: 100%;
+    flex-direction: row;
+  }
+
+  .stones-back {
+    display: block;
+  }
+
+  .calculator {
+    width: 80%;
+    max-width: 1240px;
+    align-items: center;
+  }
+
+  .calculator__title {
+    font-size: 42px;
+    line-height: 52px;
+  }
+
+  .calculator__inputs {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    flex-wrap: wrap;
+  }
+
+  .concrete-type,
+  .volume,
+  .phone,
+  .address {
+    flex: 0 0 50%;
+    padding: 0 15px;
+  }
+
+  .price__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cost-button {
+    width: 300px;
+    height: 80px;
+  }
+
+  .cost-button__content {
+    font-size: 18px;
+  }
+
+  .cost-arrow {
+    width: 18px;
+  }
+
+  .kamaz {
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    margin: 0 0 -80px -80px;
+  }
+  .kamaz img {
+    width: 200px;
+  }
+
+  .first-column {
+    width: 15%;
+  }
+
+  .second-column {
+    width: 30%;
+  }
+
+  .our-prices {
+    width: 100%;
+  }
+
+  .price-list {
+    width: 100%;
+  }
+
+  .price-table {
+    width: 100%;
+    /* overflow-y: hidden;
+        overflow-x: hidden; */
+  }
+
+  .material {
+    width: 100%;
+    max-width: none;
+  }
+
+  .make-offer-button {
+    width: 300px;
+    height: 70px;
+    font-size: 15px;
+  }
+
+  .stock-button {
+    display: flex;
+  }
+
+  .price-table__buttons {
+    position: static;
+  }
+
+  .price-table__categories {
+    padding: 10px 50px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: #f2f2f2;
+  }
+  .price-table__item {
+    padding: 20px 50px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 1px solid #e9e9e9;
+  }
+
+  .swiper {
+    width: 100%;
+  }
+
+  .our-virtues {
+    margin: 0;
+    width: 100%;
+  }
+
+  .our-virtues__item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1240px;
+    padding: 10px 15px;
+  }
+
+  .virtues-button {
+    width: 300px;
+    height: 60px;
+    font-size: 18px;
+    margin-top: 50px;
+  }
+
+  .dignity-image img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .dignity-table {
+    width: 200px;
+    height: 80px;
+    margin-bottom: -50px;
+  }
+
+  .dignity-table p {
+    font-size: 18px;
+  }
+
+  .dignity-triangle img {
+    height: 30px;
+    margin-left: -1px;
+  }
+
+  .our-virtues__title {
+    font-size: 45px;
+  }
+
+  .dignity-number {
+    font-size: 30px;
+  }
+
+  .dignity-number img {
+    width: 50px;
+  }
+
+  .laboratory {
+    background: url(../images/photo-laboratory.png) no-repeat;
+    background-size: 100%;
+    width: 100%;
+    position: relative;
+    margin: 50px 0 50px 0;
+    padding-bottom: 50px;
+  }
+
+  .laboratory__wrapper {
+    padding: 110px 0 110px 0;
+  }
+
+  .laboratory__info {
+    width: 50%;
+  }
+
+  .laboratory__info-title {
+    font-size: 42px;
+    line-height: 56px;
+  }
+
+  .laboratory__info-terms {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .laboratory__button {
+    width: 360px;
+    height: 70px;
+    font-size: 17px;
+  }
+
+  .laboratory__adds {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .laboratory__image {
+    display: block;
+    width: 50%;
+    overflow: hidden;
+  }
+
+  .laboratory__stones {
+    display: block;
+    position: absolute;
+    right: 0;
+  }
+  .laboratory__stones img {
+    height: 400px;
+  }
+
+  .our-contacts {
+    width: 100%;
+    padding-bottom: 220px;
+    margin-top: -100px;
+  }
+  .our-contacts__wrapper {
+    display: flex;
+  }
+  iframe {
+    width: 600px;
+    height: 400px;
+  }
+  .our-contacts__info {
+    padding-left: 50px;
+  }
+  .info__wrapper {
+    align-items: start;
+  }
+  .info__button {
+    font-size: 10px;
+    width: 200px;
+    height: 50px;
+  }
+  .info__button div {
+    font-size: 14px;
+  }
+  .our-contacts__title {
+    font-size: 52px;
+  }
+  .popup__content {
+    position: relative;
+    display: flex;
+    align-items: start;
+  }
+  .popup__content input {
+    width: 100%;
+    height: 50px;
+  }
+  .form__name {
+    width: 100%;
+  }
+  .form__phone {
+    width: 100%;
+  }
+  .popup__content-item {
+    width: 60%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .popup__image {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .popup__image img {
+    overflow: hidden;
+    width: 300px;
+  }
+  .ellipse {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    display: block;
+    top: 0;
+    left: 46%;
+    border-radius: 50%;
+  }
+
+  .footer {
+    background: url("../images/footer-background.png") no-repeat;
+    background-size: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer__wrapper {
+    max-width: 1240px;
+  }
+
+  .footer__content {
+    max-width: 1240px;
+    display: flex;
+  }
+
+  .footer__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 15px;
+    width: 100%;
+    max-width: 1240px;
+  }
+
+  .footer__sections a {
+    color: #ffffff;
+  }
+
+  .footer__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .footer__kamaz {
+    display: block;
+    right: 0;
+    margin-top: -80px;
+  }
+
+  .footer__kamaz img {
+    width: 200px;
+  }
+
+  .footer__sections {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer__sections a {
+    padding: 0 40px 0 40px;
+  }
 }
 
-.footer__contacts a {
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: #9EBDF4;
+@media (min-width: 1240px) {
+  .footer__kamaz img {
+    width: 400px;
+  }
+  .footer__kamaz {
+    margin-top: -150px;
+  }
+  .our-virtues__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1240px;
+  }
+  .dignity2 {
+    margin-bottom: -60px;
+  }
+
+  .dignity4 {
+    margin-bottom: -60px;
+  }
+  .laboratory__stones img {
+    height: 700px;
+  }
+}
+@media (min-width: 1450px) {
+  .kamaz {
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    margin: 0 0 -150px -150px;
+  }
+  .kamaz img {
+    width: 400px;
+  }
 }
 
-.footer__kamaz {
-    display: none;
+.alert {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
 }
 
-@media(min-width: 992px) {
-    .main-info__content{
-        text-align: start;
-    }
-    .price {
-        background: url(../images/cement-background.png) no-repeat;
-        background-size: 100%;
-        flex-direction: row;
-    }
-
-    .stones-back {
-        display: block;
-    }
-
-    .calculator {
-        width: 80%;
-        max-width: 1240px;
-        align-items: center;
-    }
-
-    .calculator__title {
-        font-size: 42px;
-        line-height: 52px;
-    }
-
-    .calculator__inputs {
-        display: flex;
-        flex-direction: row;
-        width: auto;
-        flex-wrap: wrap;
-    }
-
-    .concrete-type,
-    .volume,
-    .phone,
-    .address {
-        flex: 0 0 50%;
-        padding: 0 15px;
-    }
-
-    .price__wrapper {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cost-button {
-        width: 300px;
-        height: 80px;
-    }
-
-    .cost-button__content {
-        font-size: 18px;
-    }
-
-    .cost-arrow {
-        width: 18px;
-    }
-
-    .kamaz {
-        display: block;
-        position: absolute;
-        bottom: 0%;
-        left: 0%;
-        margin: 0 0 -80px -80px;
-    }
-    .kamaz img{
-        width: 200px;
-    }
-
-
-    .first-column {
-        width: 15%;
-    }
-
-    .second-column {
-        width: 30%;
-    }
-
-    .our-prices {
-        width: 100%;
-    }
-
-    .price-list {
-        width: 100%;
-    }
-
-    .price-table {
-        width: 100%;
-        /* overflow-y: hidden;
-        overflow-x: hidden; */
-    }
-
-    .material {
-        width: 100%;
-        max-width: none;
-    }
-
-    .make-offer-button {
-        width: 300px;
-        height: 70px;
-        font-size: 15px;
-    }
-
-    .stock-button {
-        display: flex;
-    }
-
-    .price-table__buttons {
-        position: static;
-    }
-
-    .price-table__categories {
-        padding: 10px 50px;
-        width: 100%;
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        font-weight: 600;
-        text-transform: uppercase;
-        background: #F2F2F2;
-    }
-    .price-table__item {
-        padding: 20px 50px;
-        width: 100%;
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        border-bottom: 1px solid #E9E9E9;
-    }
-    
-    .swiper {
-        width: 100%;
-    }
-
-    .our-virtues {
-        margin: 0;
-        width: 100%;
-    }
-
-    .our-virtues__item {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        max-width: 1240px;
-        padding: 10px 15px;
-    }
-
-
-    .virtues-button {
-        width: 300px;
-        height: 60px;
-        font-size: 18px;
-        margin-top: 50px;
-    }
-
-    .dignity-image img {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .dignity-table {
-        width: 200px;
-        height: 80px;
-        margin-bottom: -50px;
-    }
-
-    .dignity-table p {
-        font-size: 18px;
-    }
-
-    .dignity-triangle img {
-        height: 30px;
-        margin-left: -1px;
-    }
-
-    .our-virtues__title {
-        font-size: 45px;
-    }
-
-    .dignity-number {
-        font-size: 30px;
-    }
-
-    .dignity-number img {
-        width: 50px;
-    }
-
-    .laboratory {
-        background: url(../images/photo-laboratory.png) no-repeat;
-        background-size: 100%;
-        width: 100%;
-        position: relative;
-        margin: 50px 0 50px 0;
-        padding-bottom: 50px;
-    }
-
-    .laboratory__wrapper {
-        padding: 110px 0 110px 0;
-    }
-
-    .laboratory__info {
-        width: 50%;
-    }
-
-    .laboratory__info-title {
-        font-size: 42px;
-        line-height: 56px;
-    }
-
-    .laboratory__info-terms {
-        font-size: 20px;
-        line-height: 30px;
-    }
-
-    .laboratory__button {
-        width: 360px;
-        height: 70px;
-        font-size: 17px;
-    }
-
-    .laboratory__adds {
-        font-size: 17px;
-        line-height: 24px;
-    }
-
-    .laboratory__image {
-        display: block;
-        width: 50%;
-        overflow: hidden;
-    }
-
-    .laboratory__stones {
-        display: block;
-        position: absolute;
-        right: 0;
-    }
-    .laboratory__stones img{
-        height: 400px;
-    }
-
-    .our-contacts{
-        width: 100%;
-        padding-bottom: 220px;
-        margin-top: -100px;
-    }
-    .our-contacts__wrapper{
-        display: flex;
-    }
-    iframe{
-        width: 600px;
-        height: 400px;
-    }
-    .our-contacts__info{
-        padding-left: 50px;
-    }
-    .info__wrapper{
-        align-items: start;
-    }
-    .info__button{
-        font-size: 10px;
-        width: 200px;
-        height: 50px;
-    }
-    .info__button div{
-        font-size: 14px;
-    }
-    .our-contacts__title{
-        font-size: 52px;
-    }
-    .popup__content{
-        position: relative;
-        display: flex;
-        align-items: start;
-    }
-    .popup__content input{
-        width: 100%;
-        height: 50px;
-    }
-    .form__name{
-        width: 100%;
-    }
-    .form__phone{
-        width: 100%;
-    }
-    .popup__content-item{
-        width: 60%;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-    }
-    .popup__image{
-        display: block;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-    }
-    .popup__image img{
-        overflow: hidden;
-        width: 300px;
-    }
-    .ellipse{
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        background: transparent;
-        display: block;
-        top: 0;
-        left: 46%;
-        border-radius: 50%;
-    }
-
-    .footer {
-        background: url('../images/footer-background.png') no-repeat;
-        background-size: 100%;
-        max-width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .footer__wrapper {
-        max-width: 1240px;
-    }
-
-    .footer__content {
-        max-width: 1240px;
-        display: flex;
-    }
-
-    .footer__container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px 15px;
-        width: 100%;
-        max-width: 1240px;
-    }
-
-    .footer__sections a {
-        color: #FFFFFF;
-    }
-
-    .footer__menu {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        position: relative;
-    }
-
-    .footer__kamaz {
-        display: block;
-        right: 0;
-        margin-top: -80px;
-    }
-
-    .footer__kamaz img {
-        width: 200px;
-    }
-
-    .footer__sections {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .footer__sections a {
-        padding: 0 40px 0 40px;
-    }
+.alert_danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
 }
 
-@media(min-width: 1240px){
-    .footer__kamaz img {
-        width: 400px;
-    }
-    .footer__kamaz {
-        margin-top: -150px;
-    }
-    .our-virtues__item {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        max-width: 1240px;
-    }
-    .dignity2 {
-        margin-bottom: -60px;
-    }
-
-    .dignity4 {
-        margin-bottom: -60px;
-    }
-    .laboratory__stones img{
-        height: 700px;
-    }
-}
-@media(min-width: 1450px){
-    .kamaz {
-        display: block;
-        position: absolute;
-        bottom: 0%;
-        left: 0%;
-        margin: 0 0 -150px -150px;
-    }
-    .kamaz img{
-        width: 400px;
-    }
+.alert_success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
 }

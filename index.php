@@ -7,9 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <title>БетонСтрой</title>
@@ -42,8 +40,7 @@
                     <div class="contacts">
                         <div class="contacts__info">
                             <a href="tel:+74954781232" class="contacts__phone">+7 (495) 478 12 32</a>
-                            <a href="mailto:info_beton_stroy@domen.ru"
-                                class="contacts__mail">info_beton_stroy@domen.ru</a>
+                            <a href="mailto:info_beton_stroy@domen.ru" class="contacts__mail">info_beton_stroy@domen.ru</a>
                         </div>
                         <button type="button" class="button">
                             <a href="#popup" class="popup__link">
@@ -93,8 +90,7 @@
             <div class="main-info__content">
                 <div class="about-info">
                     <div class="about-info__main">
-                        <p>Привезём бетон нужной марки, точно в срок и с <span>БЕСПЛАТНОЙ ДОСТАВКОЙ до <span
-                                    class="number-span">30</span> августа</span></p>
+                        <p>Привезём бетон нужной марки, точно в срок и с <span>БЕСПЛАТНОЙ ДОСТАВКОЙ до <span class="number-span">30</span> августа</span></p>
                     </div>
                     <div class="about-info__discription">
                         <p>Подробности уточняйте у менеджера!</p>
@@ -796,10 +792,7 @@
             </div>
             <div class="our-contacts__wrapper">
                 <div class="our-contacts__map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2254.6891952467304!2d37.757964035937206!3d55.590018149669284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab16a7d5d0b83%3A0xc4c07d9fd8cfcfef!2sOoo%20%22Betonstroy%22!5e0!3m2!1sen!2sru!4v1658931395868!5m2!1sen!2sru"
-                        width="320" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A673e9bf8b99c1e376defe005198bdb860a8ddf068404ff4a31a0a6214c852b2f&amp;source=constructor" width="100%" height="425" frameborder="0"></iframe>
                 </div>
                 <div class="our-contacts__info">
                     <div class="info__wrapper">
@@ -904,8 +897,7 @@
                     <div class="footer__menu">
                         <div class="footer__container">
                             <div class="logo footer__logo">
-                                <a href="#"><span class="logo-yellow">Б</span>етон<span
-                                        class="logo-yellow">С</span>трой</a>
+                                <a href="#"><span class="logo-yellow">Б</span>етон<span class="logo-yellow">С</span>трой</a>
                             </div>
                             <div class="sections-container footer__sections">
                                 <div class="header__sections">
